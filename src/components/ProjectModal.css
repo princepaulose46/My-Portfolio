@@ -1,0 +1,156 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 3000;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important; /* Force center overrides motion transform sometimes needed */
+  width: 90%;
+  max-width: 700px;
+  max-height: 85vh;
+  z-index: 3001;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.modal-content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden; /* Ensure content stays within border radius and layout */
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fff, #94a3b8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 2rem;
+}
+
+.modal-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.modal-scroll-area {
+  overflow-y: auto;
+  padding-right: 1rem;
+  margin-right: -1rem; /* Offset padding for scrollbar */
+  flex: 1 1 auto;
+  min-height: 0; /* Crucial for scrolling in nested flex containers */
+  margin-bottom: 1rem; /* Space before actions */
+}
+
+.modal-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+.modal-section {
+  margin-bottom: 2rem;
+}
+
+.modal-section h3 {
+  font-size: 1.2rem;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature-list, .challenge-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.feature-list li, .challenge-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.feature-icon {
+  color: var(--accent-secondary);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.challenge-icon {
+  color: #fbaceb; /* Pinkish for challenges */
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.modal-actions {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Scrollbar styling for modal */
+.modal-scroll-area::-webkit-scrollbar {
+  width: 8px; /* Slightly wider */
+}
+
+.modal-scroll-area::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* Visible track */
+  border-radius: 4px;
+}
+
+.modal-scroll-area::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.modal-scroll-area::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary); /* Highlight on hover */
+}

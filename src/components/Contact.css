@@ -1,0 +1,38 @@
+.contact-wrapper {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-item a {
+  color: var(--accent-primary);
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 5rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
