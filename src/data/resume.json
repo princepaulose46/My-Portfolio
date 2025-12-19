@@ -20,7 +20,7 @@
       "highlights": [
         "Architected and developed the Backend for Frontend (BFF) layer for IBM Data Product Hub using Node.js, Express, and GraphQL, enabling efficient data aggregation and optimized API consumption for React clients.",
         "Built enterprise-grade React frontend components with TypeScript, implementing modern React Hooks patterns and state management to deliver a seamless user experience for data product discovery and management.",
-        "Established comprehensive testing infrastructure including unit tests, integration tests, and end-to-end automation, achieving 85%+ code coverage and reducing production defects by 40%.",
+        "Established comprehensive testing infrastructure including unit tests, integration tests, and end-to-end automation, achieving high code coverage and significantly reducing production defects.",
         "Collaborated with Java microservices teams to design and integrate RESTful APIs, ensuring seamless data flow between frontend, BFF layer, and backend services in a distributed architecture.",
         "Migrated legacy JavaScript components to modern TypeScript architecture, improving type safety, maintainability, and developer productivity across the codebase."
       ]
@@ -32,10 +32,10 @@
       "endDate": "April 2024",
       "highlights": [
         "Led a cross-functional team of 5 engineers in designing and delivering an enterprise Incident Management micro-frontend application, managing the complete software development lifecycle from requirements gathering and technical design to development, testing, and production deployment.",
-        "Architected and implemented a scalable micro-frontend solution using React, Node.js, and GraphQL, with Redis for caching, MongoDB for data persistence, and Azure for cloud infrastructure and CI/CD pipelines.",
-        "Designed and built a comprehensive Admin Reporting section with PowerBI integration, providing real-time operational insights and analytics dashboards that enhanced decision-making for business stakeholders and reduced incident resolution time by 30%.",
+        "Architected and implemented a scalable micro-frontend solution using React, Node.js, and GraphQL, with Redis for caching, MongoDB for data persistence, and cloud infrastructure for CI/CD pipelines.",
+        "Designed and built a comprehensive Admin Reporting section with PowerBI integration, providing real-time operational insights and analytics dashboards that enhanced decision-making for business stakeholders and reduced incident resolution time.",
         "Developed advanced analytics modules with complex data aggregations and visualizations, enabling stakeholders to identify trends, track KPIs, and optimize incident management workflows.",
-        "Implemented user onboarding and feature adoption through in-app tours and interactive guides, improving user engagement and reducing support tickets by 25%.",
+        "Implemented user onboarding and feature adoption through in-app tours and interactive guides, improving user engagement and support efficiency.",
         "Established best practices for code quality, testing, and deployment automation, mentoring team members on modern development workflows and architectural patterns."
       ]
     },
@@ -49,9 +49,9 @@
         "Built an end-to-end Course Creation and Learning Management Platform with intuitive drag-and-drop course builder, content publishing workflows, user subscription management, and interactive learning modules, enabling educators to create and monetize educational content.",
         "Designed and implemented a high-performance IoT Analytics Platform for real-time data visualization and analysis, processing thousands of sensor data points per second with complex aggregations, built using Python for data processing, Node.js for API services, and React for interactive dashboards.",
         "Developed a cross-platform React Native mobile application for the IoT platform, providing users with real-time monitoring and analytics capabilities on iOS and Android devices with offline-first architecture and seamless data synchronization.",
-        "Established robust AWS cloud infrastructure including EC2, S3, Lambda, and CloudWatch for application deployment, monitoring, and scaling, ensuring 99.9% uptime and handling traffic spikes during major events.",
+        "Established robust AWS cloud infrastructure including EC2, S3, Lambda, and CloudWatch for application deployment, monitoring, and scaling, ensuring high availability and handling traffic spikes during major events.",
         "Implemented real-time communication modules using Socket.io and WebRTC, enabling low-latency video streaming, chat functionality, and live data updates across all platforms, significantly enhancing user engagement and retention.",
-        "Led technical initiatives to improve code quality, implement CI/CD pipelines, and establish development best practices, reducing deployment time by 60% and improving team productivity."
+        "Led technical initiatives to improve code quality, implement CI/CD pipelines, and establish development best practices, accelerating deployment cycles and improving team productivity."
       ]
     }
   ],
@@ -108,11 +108,11 @@
   ],
   "skills": {
     "Core Languages": ["Java", "TypeScript", "JavaScript"],
-    "Backend / API": ["Spring Boot", "JPA/Hibernate", "Microservices", "Node.js", "Express.js", "REST API", "GraphQL"],
+    "Backend / API": ["Spring Boot", "Spring Cloud", "Spring Security", "JPA/Hibernate", "Microservices", "Node.js", "Express.js", "GraphQL", "REST API"],
     "Frontend": ["React", "Redux", "Next.js", "Micro front-end", "HTML", "CSS", "Accessibility", "Client-side storage"],
-    "Databases": ["MongoDB", "MySQL", "Redis", "Snowflake"],
-    "Cloud / DevOps": ["AWS", "Kubernetes", "CI/CD (Git, Jenkins)", "Docker"],
-    "Tools / Other": ["Kafka", "Vector Search", "Generative AI", "LLM Integration", "System Design", "Jira"]
+    "Databases": ["MongoDB", "MySQL", "PostgreSQL", "Redis", "Snowflake"],
+    "Cloud / DevOps": ["AWS", "Kubernetes", "Docker", "CI/CD (Git, Jenkins)"],
+    "Tools / Other": ["Maven", "Gradle", "JUnit/Mockito", "Kafka", "System Design", "Jira", "Vector Search"]
   },
   "education": [
     {

@@ -25,17 +25,23 @@
             line-height: 1.5;
             color: var(--text);
             background: #f7fafc;
-            font-size: 10.5pt; /* Optimized for print readability */
+            font-size: 10.5pt;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
         }
 
         .page {
             width: 210mm;
-            min-height: 297mm;
-            padding: 15mm 20mm; /* Standard margins */
+            height: 296mm; /* Exact A4 height minus tiny buffer to prevent overflow */
+            padding: 15mm 20mm;
             margin: 20px auto;
             background: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             position: relative;
+            overflow: hidden; /* Ensure content stays within page */
         }
 
         /* Header */
@@ -293,7 +299,7 @@
                 Professional Summary
             </h2>
             <p style="text-align: justify; font-size: 10.5pt; color: #333;">
-                Senior Full Stack Engineer with 7+ years of experience specializing in React, Node.js, and Java microservices. Proven track record of architecting scalable web applications, optimizing performance, and leading development teams in Agile environments. Expert in distributed systems, cloud infrastructure (AWS/Azure), and modern frontend architectures. Passionate about code quality, automation, and mentoring developers.
+                Senior Full Stack Engineer with 7+ years of experience specializing in React, Node.js, and Java microservices. Proven track record of architecting scalable web applications, optimizing performance, and leading development teams in Agile environments. Expert in distributed systems, AWS cloud infrastructure, and modern frontend architectures. Passionate about code quality, automation, and mentoring developers.
             </p>
         </section>
 
@@ -309,15 +315,15 @@
                 </div>
                 <div class="skill-category">
                     <div class="skill-name">Backend & API</div>
-                    <div class="skill-list">Node.js, Express, Java, Spring Boot, REST, GraphQL, Microservices</div>
+                    <div class="skill-list">Java, Spring Boot, Node.js, Express, Spring Cloud, Spring Security, Hibernate/JPA, Microservices, GraphQL</div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-name">Database & Cloud</div>
-                    <div class="skill-list">MongoDB, MySQL, Redis, AWS, Azure, Docker, Kubernetes</div>
+                    <div class="skill-list">MongoDB, MySQL, PostgreSQL, Redis, AWS, Docker, Kubernetes</div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-name">Tools & DevOps</div>
-                    <div class="skill-list">Git, Jenkins, CI/CD, Kafka, Jira, System Design, Testing (Jest/Cypress)</div>
+                    <div class="skill-list">Git, Maven, Gradle, Jenkins, Kafka, JUnit/Mockito, System Design, Jira</div>
                 </div>
             </div>
         </section>
@@ -335,12 +341,12 @@
                 </div>
                 <div class="job-header">
                     <div class="role">Senior Software Developer</div>
-                    <div class="location">Kerala, India</div>
+                    <div class="location">Kochi, India</div>
                 </div>
                 <ul>
                     <li>Architected and developed the Backend for Frontend (BFF) layer for IBM Data Product Hub using Node.js, Express, and GraphQL, enabling efficient data aggregation for React clients.</li>
                     <li>Built enterprise-grade React frontend components with TypeScript, implementing modern React Hooks patterns and state management strategies.</li>
-                    <li>Established comprehensive testing infrastructure including unit, integration, and E2E tests, achieving 85%+ code coverage and reducing production defects by 40%.</li>
+                    <li>Established comprehensive testing infrastructure including unit, integration, and E2E tests, achieving high code coverage and significantly reducing production defects.</li>
                     <li>Collaborated with Java microservices teams to design and integrate RESTful APIs in a distributed architecture.</li>
                     <li>Migrated legacy JavaScript components to modern TypeScript architecture, significantly improving type safety and maintainability.</li>
                 </ul>
@@ -357,9 +363,9 @@
                 </div>
                 <ul>
                     <li>Led a team of 5 engineers in delivering an enterprise Incident Management micro-frontend application, managing the full SDLC from design to deployment.</li>
-                    <li>Architected a scalable solution using React, Node.js, and GraphQL, utilizing Redis for caching and Azure for cloud infrastructure.</li>
-                    <li>Designed an Admin Reporting section with PowerBI integration, providing real-time analytics that reduced incident resolution time by 30%.</li>
-                    <li>Implemented user onboarding tours and interactive guides, improving adoption and reducing support tickets by 25%.</li>
+                    <li>Architected a scalable solution using React, Node.js, and GraphQL, utilizing Redis for caching and cloud infrastructure for CI/CD pipelines.</li>
+                    <li>Designed an Admin Reporting section with PowerBI integration, providing real-time analytics that reduced incident resolution time.</li>
+                    <li>Implemented user onboarding tours and interactive guides, improving adoption and reducing support ticket volume.</li>
                     <li>Mentored team members on modern development workflows, code quality best practices, and architectural patterns.</li>
                 </ul>
             </div>
@@ -388,8 +394,8 @@
                     <li>Built an end-to-end Course Creation Platform with a drag-and-drop builder, enabling educators to monetize content.</li>
                     <li>Designed a high-performance IoT Analytics Platform processing thousands of sensor points/sec using Python, Node.js, and React.</li>
                     <li>Developed a cross-platform React Native mobile app for IoT monitoring with offline-first architecture.</li>
-                    <li>Established robust AWS infrastructure (EC2, S3, Lambda) ensuring 99.9% uptime during high-traffic events.</li>
-                    <li>Led technical initiatives to improve code quality and implement CI/CD pipelines, reducing deployment time by 60%.</li>
+                    <li>Established robust AWS infrastructure (EC2, S3, Lambda) ensuring high availability during high-traffic events.</li>
+                    <li>Led technical initiatives to improve code quality and implement CI/CD pipelines, accelerating deployment time.</li>
                 </ul>
             </div>
         </section>
