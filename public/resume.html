@@ -22,7 +22,7 @@
 
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.4;
+            line-height: 1.38; /* Definitive reduction to fit content */
             color: var(--text);
             background: #f7fafc;
             font-size: 10pt;
@@ -31,7 +31,7 @@
         .page {
             width: 210mm;
             min-height: 297mm;
-            padding: 12mm 15mm;
+            padding: 10mm 15mm; /* Reduced padding for maximum space */
             margin: 20px auto;
             background: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -41,8 +41,8 @@
         /* Header */
         header {
             border-bottom: 2px solid var(--primary);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+            padding-bottom: 8px;
+            margin-bottom: 12px; /* Tighter header spacing */
         }
 
         .header-top {
@@ -56,7 +56,7 @@
             color: var(--primary);
             font-weight: 800;
             letter-spacing: -0.5px;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
         .title {
@@ -65,16 +65,16 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px 15px;
+            gap: 8px 15px;
             font-size: 9pt;
             color: var(--secondary);
-            margin-top: 4px;
+            margin-top: 5px;
         }
 
         .contact-item {
@@ -96,7 +96,7 @@
 
         /* Sections */
         section {
-            margin-bottom: 12px;
+            margin-bottom: 10px; /* Reduced section spacing */
         }
 
         h2 {
@@ -104,12 +104,12 @@
             color: var(--primary);
             border-bottom: 1px solid var(--border);
             padding-bottom: 4px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 7px;
         }
 
         h2 svg {
@@ -120,14 +120,14 @@
 
         /* Experience & Projects */
         .job, .project {
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* Reduced job spacing */
         }
 
         .job-header, .project-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 2px;
+            margin-bottom: 3px;
         }
 
         .company, .project-name {
@@ -143,14 +143,14 @@
         }
 
         .date, .location {
-            font-size: 8.5pt;
+            font-size: 9pt;
             color: var(--light-text);
             font-weight: 500;
         }
 
         .description {
             text-align: justify;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         ul {
@@ -160,9 +160,9 @@
 
         li {
             position: relative;
-            padding-left: 12px;
+            padding-left: 13px;
             margin-bottom: 2px;
-            font-size: 9.5pt;
+            font-size: 10pt;
             color: #333;
         }
 
@@ -177,8 +177,8 @@
         /* Skills */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns for better density */
-            gap: 4px 15px;
+            grid-template-columns: 1fr; 
+            gap: 8px; /* Tighter grid gap */
         }
 
         .skill-category {
@@ -187,14 +187,27 @@
 
         .skill-name {
             font-weight: 700;
-            font-size: 9pt;
+            font-size: 10pt;
             color: var(--primary);
-            margin-bottom: 1px;
+            margin-bottom: 4px;
+            display: block;
         }
 
         .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill-tag {
             font-size: 9pt;
-            color: var(--secondary);
+            color: var(--primary);
+            background-color: #e2e8f0; 
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
         }
 
         /* Tags for tech stack */
@@ -202,7 +215,7 @@
             font-size: 9pt;
             color: var(--secondary);
             font-style: italic;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         /* Helper classes */
@@ -218,7 +231,7 @@
             .page {
                 box-shadow: none;
                 margin: 0;
-                padding: 12mm 15mm;
+                padding: 10mm 15mm; /* Apply tight padding to print media */
                 page-break-after: always;
             }
             .no-print {
@@ -293,7 +306,7 @@
                 Professional Summary
             </h2>
             <p style="text-align: justify; font-size: 10.5pt; color: #333;">
-                Senior Full Stack Engineer with 7+ years of experience specializing in React, Node.js, and Java microservices. Proven track record of architecting scalable web applications, optimizing performance, and leading development teams in Agile environments. Expert in distributed systems, AWS cloud infrastructure, and modern frontend architectures. Passionate about code quality, automation, and mentoring developers.
+                Senior Full Stack Engineer with 7+ years of experience specializing in React, Node.js, and Java microservices. Proven track record of architecting scalable web applications, optimizing performance, and leading development teams in Agile environments. Expert in distributed systems, AWS cloud infrastructure, and modern frontend architectures.
             </p>
         </section>
 
@@ -304,20 +317,56 @@
             </h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <div class="skill-name">Frontend Development</div>
-                    <div class="skill-list">React, Redux, Next.js, TypeScript, HTML5, CSS3, Micro-frontends, Accessibility</div>
+                    <span class="skill-name">Frontend Development</span>
+                    <div class="skill-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Micro-frontends</span>
+                        <span class="skill-tag">Accessibility</span>
+                    </div>
                 </div>
                 <div class="skill-category">
-                    <div class="skill-name">Backend & API</div>
-                    <div class="skill-list">Java, Spring Boot, Node.js, Express, Spring Cloud, Spring Security, Hibernate/JPA, Microservices, GraphQL</div>
+                    <span class="skill-name">Backend & API</span>
+                    <div class="skill-list">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Spring Cloud</span>
+                        <span class="skill-tag">Spring Security</span>
+                        <span class="skill-tag">Hibernate/JPA</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">GraphQL</span>
+                    </div>
                 </div>
                 <div class="skill-category">
-                    <div class="skill-name">Database & Cloud</div>
-                    <div class="skill-list">MongoDB, MySQL, PostgreSQL, Redis, AWS, Docker, Kubernetes</div>
+                    <span class="skill-name">Database & Cloud</span>
+                    <div class="skill-list">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
                 </div>
                 <div class="skill-category">
-                    <div class="skill-name">Tools & DevOps</div>
-                    <div class="skill-list">Git, Maven, Gradle, Jenkins, Kafka, JUnit/Mockito, System Design, Jira</div>
+                    <span class="skill-name">Tools & DevOps</span>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Gradle</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">JUnit/Mockito</span>
+                        <span class="skill-tag">System Design</span>
+                        <span class="skill-tag">Jira</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -357,7 +406,6 @@
                 </div>
                 <ul>
                     <li>Led a team of 5 engineers in delivering an enterprise Incident Management micro-frontend application, managing the full SDLC from design to deployment.</li>
-                    <li>Architected a scalable solution using React, Node.js, and GraphQL, utilizing Redis for caching and cloud infrastructure for CI/CD pipelines.</li>
                     <li>Designed an Admin Reporting section with PowerBI integration, providing real-time analytics that reduced incident resolution time.</li>
                     <li>Implemented user onboarding tours and interactive guides, improving adoption and reducing support ticket volume.</li>
                     <li>Mentored team members on modern development workflows, code quality best practices, and architectural patterns.</li>
@@ -409,6 +457,12 @@
                 <div class="description">
                     An enterprise-grade financial management platform demonstrating microservices architecture. Decoupled Authentication and Core services using Spring Boot, secure JWT auth, and an Event-Driven architecture. Features a responsive React/Redux frontend, Docker containerization, and comprehensive data visualization.
                 </div>
+                <div class="project-footer" style="margin-top: 4px;">
+                    <a href="https://github.com/princepaulose46/Smart-Expense-Tracker" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; font-size: 9pt; color: var(--accent); font-weight: 500;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        View Repository
+                    </a>
+                </div>
             </div>
 
             <div class="project">
@@ -420,7 +474,14 @@
                 <div class="description">
                     Real-time stock signal analysis app for Nifty 50 tokens. Integrates TradingView webhooks, validates signals based on custom risk/reward logic and market hours, and broadcasts to a React frontend via WebSockets with sub-second latency. Features a robust validation engine and automated data expiration.
                 </div>
+                <div class="project-footer" style="margin-top: 4px;">
+                    <a href="https://github.com/princepaulose46/Trading-Signals" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; font-size: 9pt; color: var(--accent); font-weight: 500;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        View Repository
+                    </a>
+                </div>
             </div>
+
         </section>
 
         <section>
