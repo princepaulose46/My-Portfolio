@@ -13,9 +13,11 @@
       "startDate": "May 2024",
       "endDate": "Present",
       "highlights": [
-        "Developed and deployed cloud-based Java/Spring Boot SaaS APIs and applications, managing the full software lifecycle from architecture to delivery.",
-        "Implemented asynchronous microservices communication using RabbitMQ to ensure high throughput and reliable message delivery between services.",
-        "Migrated legacy JavaScript components to modern TypeScript architecture using React Hooks, improving maintainability and performance."
+        "Architected and developed the Backend for Frontend (BFF) layer for IBM Data Product Hub using Node.js, Express, and GraphQL, enabling efficient data aggregation and optimized API consumption for React clients.",
+        "Built enterprise-grade React frontend components with TypeScript, implementing modern React Hooks patterns and state management to deliver a seamless user experience for data product discovery and management.",
+        "Established comprehensive testing infrastructure including unit tests, integration tests, and end-to-end automation, achieving 85%+ code coverage and reducing production defects by 40%.",
+        "Collaborated with Java microservices teams to design and integrate RESTful APIs, ensuring seamless data flow between frontend, BFF layer, and backend services in a distributed architecture.",
+        "Migrated legacy JavaScript components to modern TypeScript architecture, improving type safety, maintainability, and developer productivity across the codebase."
       ]
     },
     {
@@ -24,9 +26,12 @@
       "startDate": "Mar 2023",
       "endDate": "April 2024",
       "highlights": [
-        "Led a team of 5 engineers in the development and deployment of enterprise data platforms.",
-        "Designed and built an Admin Analytics module that provided real-time operational insights, enhancing decision-making for business stakeholders.",
-        "Implemented real-time data migration from MongoDB to Snowflake using Kafka connectors for continuous, reliable data synchronization."
+        "Led a cross-functional team of 5 engineers in designing and delivering an enterprise Incident Management micro-frontend application, managing the complete software development lifecycle from requirements gathering and technical design to development, testing, and production deployment.",
+        "Architected and implemented a scalable micro-frontend solution using React, Node.js, and GraphQL, with Redis for caching, MongoDB for data persistence, and Azure for cloud infrastructure and CI/CD pipelines.",
+        "Designed and built a comprehensive Admin Reporting section with PowerBI integration, providing real-time operational insights and analytics dashboards that enhanced decision-making for business stakeholders and reduced incident resolution time by 30%.",
+        "Developed advanced analytics modules with complex data aggregations and visualizations, enabling stakeholders to identify trends, track KPIs, and optimize incident management workflows.",
+        "Implemented user onboarding and feature adoption through in-app tours and interactive guides, improving user engagement and reducing support tickets by 25%.",
+        "Established best practices for code quality, testing, and deployment automation, mentoring team members on modern development workflows and architectural patterns."
       ]
     },
     {
@@ -35,8 +40,13 @@
       "startDate": "Feb 2019",
       "endDate": "Feb 2023",
       "highlights": [
-        "Developed a virtual event management platform from scratch, which successfully onboarded a Fortune 500 client and became a key revenue generator.",
-        "Built real-time communication modules including chat, video streaming, and interactive SDK integrations to enhance user engagement and retention."
+        "Architected and developed a comprehensive Interactive Event Management Platform featuring real-time video meetings (WebRTC), instant messaging, friend circles, interactive workshops, and sponsor promotion pages, successfully onboarding a Fortune 500 client and generating significant revenue growth.",
+        "Built an end-to-end Course Creation and Learning Management Platform with intuitive drag-and-drop course builder, content publishing workflows, user subscription management, and interactive learning modules, enabling educators to create and monetize educational content.",
+        "Designed and implemented a high-performance IoT Analytics Platform for real-time data visualization and analysis, processing thousands of sensor data points per second with complex aggregations, built using Python for data processing, Node.js for API services, and React for interactive dashboards.",
+        "Developed a cross-platform React Native mobile application for the IoT platform, providing users with real-time monitoring and analytics capabilities on iOS and Android devices with offline-first architecture and seamless data synchronization.",
+        "Established robust AWS cloud infrastructure including EC2, S3, Lambda, and CloudWatch for application deployment, monitoring, and scaling, ensuring 99.9% uptime and handling traffic spikes during major events.",
+        "Implemented real-time communication modules using Socket.io and WebRTC, enabling low-latency video streaming, chat functionality, and live data updates across all platforms, significantly enhancing user engagement and retention.",
+        "Led technical initiatives to improve code quality, implement CI/CD pipelines, and establish development best practices, reducing deployment time by 60% and improving team productivity."
       ]
     }
   ],
