@@ -51,9 +51,9 @@ const Hero = () => {
                         className="cta-buttons"
                     >
                         <a href="#experience" className="btn btn-primary">Check my work</a>
-                        <a href="/resume.html" target="_blank" className="btn btn-outline">
+                        <a href="/Prince_Paulose_Resume.pdf" download="Prince_Paulose_Resume.pdf" className="btn btn-outline">
                             <Download size={18} />
-                            View Resume
+                            Download Resume
                         </a>
                     </motion.div>
                     <motion.div
