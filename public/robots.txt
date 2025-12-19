@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://princepaulose.dev/sitemap.xml
+Sitemap: https://princepaulose.netlify.app/sitemap.xml

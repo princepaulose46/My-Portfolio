@@ -7,7 +7,7 @@ const SEO = () => {
     const title = "Prince Paulose | Senior Full Stack Developer | React, Node.js, Java";
     const description = "Prince Paulose - Senior Full Stack Developer specializing in React, Node.js, TypeScript, and Java microservices. Freelance developer based in Kerala, India with expertise in building scalable web applications, microservices architecture, and cloud solutions.";
     const keywords = "Prince Paulose, freelance React developer, Node.js developer, Java Full Stack developer, Senior Software Engineer Kerala, TypeScript developer, microservices developer India, React developer Kerala, freelance developer India, IBM developer, Capgemini developer";
-    const url = "https://princepaulose.dev"; // Update with your actual domain
+    const url = "https://princepaulose.netlify.app";
     const image = `${url}/portfolio-logo.svg`; // Update with actual preview image if you have one
 
     // Structured Data (JSON-LD) for Person schema
