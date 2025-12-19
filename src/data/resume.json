@@ -45,7 +45,7 @@
       "name": "Smart Expense Tracker Platform",
       "description": "Microservices-based expense tracking solution. Features a Spring Boot backend with Authentication and Core services, and a React frontend with Redux Toolkit for state management.",
       "technologies": ["Java", "Spring Boot", "Microservices", "MongoDB", "React", "Redux Toolkit", "Docker"],
-      "link": "#",
+      "link": "https://github.com/princepaulose46/Smart-Expense-Tracker",
       "details": {
         "longDescription": "An enterprise-grade financial management platform designed to demonstrate the power and scalability of a microservices architecture. Unlike monolithic expense trackers, this solution decouples authentication, core logic, and analytics into distinct, containerized services. The Authentication Service handles secure JWT issuance and rotation, while the Core Service manages complex transaction CRUD operations. The system employs an Event-Driven architecture where necessary to ensure data consistency. The frontend is a highly responsive React application utilizing Redux Toolkit for efficient caching and optimistic UI updates, providing a seamless user experience similar to native banking apps.",
         "features": [
@@ -68,7 +68,7 @@
       "name": "Stock Market Signals App",
       "description": "Real-time stock market signal analysis application for Nifty 50. Integrates with TradingView Webhooks to capture data, analyzes it based on custom strategies, and broadcasts signals via Socket.io.",
       "technologies": ["Node.js", "React", "TypeScript", "MongoDB", "Socket.io", "TradingView API"],
-      "link": "#",
+      "link": "https://github.com/princepaulose46/Trading-Signals",
       "details": {
         "longDescription": "A sophisticated, high-performance personal trading assistant designed to democratize algorithmic trading for the Nifty 50. By bridging TradingView's powerful charting engine with a custom Node.js backend, this application acts as a real-time conduit for market intelligence. It listens for webhook events triggered by complex technical indicators (like RSI divergence, MACD crossovers, and Bollinger Brand breakouts) and processes them instantly. The system filters noise using a custom validation engine that checks for confluence across multiple timeframes, time-of-day constraints, and risk-reward ratios before broadcasting actionable signals. It effectively replaces manual chart watching with an automated, 24/7 market monitor.",
         "features": [
