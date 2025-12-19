@@ -68,9 +68,19 @@ const ProjectModal = ({ selectedProject, onClose }) => {
                             </div>
 
                             <div className="modal-actions">
+                                {selectedProject.details?.liveDemo && (
+                                    <a
+                                        href={selectedProject.details.liveDemo}
+                                        className="btn btn-primary"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        View Live Demo
+                                    </a>
+                                )}
                                 <a
                                     href={selectedProject.link}
-                                    className="btn btn-primary"
+                                    className={selectedProject.details?.liveDemo ? "btn btn-outline" : "btn btn-primary"}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

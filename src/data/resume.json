@@ -55,8 +55,9 @@
       "name": "Smart Expense Tracker Platform",
       "description": "Microservices-based expense tracking solution. Features a Spring Boot backend with Authentication and Core services, and a React frontend with Redux Toolkit for state management.",
       "technologies": ["Java", "Spring Boot", "Microservices", "MongoDB", "React", "Redux Toolkit", "Docker"],
-      "link": "https://smart-expense-tracker-in.netlify.app/login",
+      "link": "https://github.com/princepaulose46/Smart-Expense-Tracker",
       "details": {
+        "liveDemo": "https://smart-expense-tracker-in.netlify.app/login",
         "longDescription": "An enterprise-grade financial management platform designed to demonstrate the power and scalability of a microservices architecture. Unlike monolithic expense trackers, this solution decouples authentication, core logic, and analytics into distinct, containerized services. The Authentication Service handles secure JWT issuance and rotation, while the Core Service manages complex transaction CRUD operations. The system employs an Event-Driven architecture where necessary to ensure data consistency. The frontend is a highly responsive React application utilizing Redux Toolkit for efficient caching and optimistic UI updates, providing a seamless user experience similar to native banking apps.",
         "features": [
           "Microservices Architecture: Independent Spring Boot services for Auth and Core logic.",
