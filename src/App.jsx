@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import FloatingDock from './components/FloatingDock';
+import SEO from './components/SEO';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="app">
+      <SEO />
       <FloatingDock items={navItems} />
       <main>
         <Hero />

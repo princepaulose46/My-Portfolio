@@ -40,7 +40,7 @@ const Hero = () => {
                         transition={{ delay: 0.5 }}
                         style={{ color: 'var(--text-secondary)', marginBottom: '2rem', maxWidth: '500px' }}
                     >
-                        I build scalable, high-performance applications with modern architecture.
+                        I build scalable, high-performance applications with React, Node.js, Java, and modern microservices architecture. Specializing in full-stack development and cloud solutions.
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
