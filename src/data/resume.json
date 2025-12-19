@@ -4,7 +4,12 @@
     "label": "Senior Java Full-Stack Engineer",
     "email": "princepaulose1996@gmail.com",
     "phone": "+91 7591944220",
-    "location": "Kerala, India"
+    "location": "Kerala, India",
+    "profiles": {
+      "linkedin": "https://www.linkedin.com/in/princepaulose1996/",
+      "github": "https://github.com/princepaulose46"
+    },
+    "yearsOfExperience": 7
   },
   "experience": [
     {
@@ -125,7 +130,12 @@
     "endDate": "Jan 19"
   },
   "awards": [
-    "Awarded the prestigious 'Going the Extra Mile (GEM)' Award at Capgemini (2024)"
+    {
+      "title": "GEM Award",
+      "date": "2023",
+      "awarder": "Capgemini",
+      "summary": "Recognized for exceptional performance and outstanding contributions to project delivery"
+    }
   ],
   "languages": ["English", "Malayalam", "Hindi"],
   "meta": {

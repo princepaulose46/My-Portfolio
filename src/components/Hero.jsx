@@ -1,6 +1,7 @@
 import './Hero.css';
 import resumeData from '../data/resume.json';
 import { motion } from 'framer-motion';
+import { Download } from 'lucide-react';
 
 const Hero = () => {
     const { basics } = resumeData;
@@ -26,14 +27,15 @@ const Hero = () => {
                     >
                         {basics.name}
                     </motion.h1>
-                    <motion.h2
+                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4 }}
-                        className="title"
+                        transition={{ delay: 0.35 }}
+                        className="title-wrapper"
                     >
-                        {basics.label}
-                    </motion.h2>
+                        <h2 className="title">{basics.label}</h2>
+                        <span className="experience-badge">{basics.yearsOfExperience}+ Years Experience</span>
+                    </motion.div>
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -49,7 +51,18 @@ const Hero = () => {
                         className="cta-buttons"
                     >
                         <a href="#experience" className="btn btn-primary">Check my work</a>
-                        <a href={`mailto:${basics.email}`} className="btn btn-outline">Get In Touch</a>
+                        <a href="/Prince_Paulose_Resume.pdf" download className="btn btn-outline">
+                            <Download size={18} />
+                            Download Resume
+                        </a>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.7 }}
+                        className="hero-quote"
+                    >
+                        <p>"Code is like humor. When you have to explain it, it's bad." — Cory House</p>
                     </motion.div>
                 </div>
             </div>
