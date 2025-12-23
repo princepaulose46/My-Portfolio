@@ -4,8 +4,8 @@ import resumeData from '../data/resume.json';
 const SEO = () => {
     const { basics } = resumeData;
 
-    const title = "Prince Paulose | Senior Full Stack Developer | React, Node.js, Java";
-    const description = "Prince Paulose - Senior Full Stack Developer specializing in React, Node.js, TypeScript, and Java microservices. Freelance developer based in Kerala, India with expertise in building scalable web applications, microservices architecture, and cloud solutions.";
+    const title = "Prince Paulose | Senior Software Engineer | React, Node.js, Java";
+    const description = "Prince Paulose - Senior Software Engineer specializing in React, Node.js, TypeScript, and Java microservices. Experienced in building scalable web applications and distributed systems.";
     const keywords = "Prince Paulose, freelance React developer, Node.js developer, Java Full Stack developer, Senior Software Engineer Kerala, TypeScript developer, microservices developer India, React developer Kerala, freelance developer India, IBM developer, Capgemini developer";
     const url = "https://princepaulose.netlify.app";
     const image = `${url}/portfolio-logo.svg`; // Update with actual preview image if you have one
@@ -15,8 +15,8 @@ const SEO = () => {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Prince Paulose",
-        "jobTitle": "Senior Java Full-Stack Engineer",
-        "description": "Senior Full Stack Developer specializing in React, Node.js, TypeScript, and Java microservices",
+        "jobTitle": "Senior Software Engineer",
+        "description": "Senior Software Engineer specializing in React, Node.js, TypeScript, and Java microservices",
         "url": url,
         "email": basics.email,
         "telephone": basics.phone,
