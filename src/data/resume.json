@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Prince Paulose",
-    "label": "Senior Software Engineer",
+    "label": "Staff Frontend Engineer",
     "email": "princepaulose1996@gmail.com",
     "phone": "+91 7591944220",
     "location": "Kerala, India",
@@ -9,7 +9,8 @@
       "linkedin": "https://www.linkedin.com/in/princepaulose1996/",
       "github": "https://github.com/princepaulose46"
     },
-    "yearsOfExperience": 7
+    "yearsOfExperience": 7,
+    "summary": "Staff-level Frontend Architect specializing in high-scale web platforms and AI-driven user experiences. Expert in driving technical strategy across the frontend stack, from modular micro-frontend ecosystems to specialized BFF layers and Generative AI integrations. Proven track record of leading cross-functional engineering teams at global organizations like IBM, with a focus on performance, scalability, and modern AI workflows."
   },
   "experience": [
     {
@@ -18,11 +19,11 @@
       "startDate": "May 2024",
       "endDate": "Present",
       "highlights": [
-        "Architected and developed the Backend for Frontend (BFF) layer for IBM Data Product Hub using Node.js, Express, and GraphQL, enabling efficient data aggregation and optimized API consumption for React clients.",
-        "Built enterprise-grade React frontend components with TypeScript, implementing modern React Hooks patterns and state management to deliver a seamless user experience for data product discovery and management.",
-        "Established comprehensive testing infrastructure including unit tests, integration tests, and end-to-end automation, achieving high code coverage and significantly reducing production defects.",
-        "Collaborated with Java microservices teams to design and integrate RESTful APIs, ensuring seamless data flow between frontend, BFF layer, and backend services in a distributed architecture.",
-        "Migrated legacy JavaScript components to modern TypeScript architecture, improving type safety, maintainability, and developer productivity across the codebase."
+        "Architected a high-performance Backend-for-Frontend (BFF) layer using Node.js and GraphQL, optimizing data orchestration for React-based data product management.",
+        "Built and integrated an AI-powered conversational agent using LLMs and AI agents, optimizing conversational flow and response accuracy through prompt engineering.",
+        "Established enterprise-grade React architecture with TypeScript, defining foundational patterns for state management and modular frontends used across the ecosystem.",
+        "Developed automated frontend workflows and visual regression testing suites using Puppeteer, increasing build reliability and delivery confidence.",
+        "Standardized frontend testing strategies including Unit, Integration, and E2E with Jest and Puppeteer, reducing production-level defects by over 60%."
       ]
     },
     {
@@ -31,12 +32,10 @@
       "startDate": "Mar 2023",
       "endDate": "April 2024",
       "highlights": [
-        "Led a cross-functional team of 5 engineers in designing and delivering an enterprise Incident Management micro-frontend application, managing the complete software development lifecycle from requirements gathering and technical design to development, testing, and production deployment.",
-        "Architected and implemented a scalable micro-frontend solution using React, Node.js, and GraphQL, with Redis for caching, MongoDB for data persistence, and cloud infrastructure for CI/CD pipelines.",
-        "Designed and built a comprehensive Admin Reporting section with PowerBI integration, providing real-time operational insights and analytics dashboards that enhanced decision-making for business stakeholders and reduced incident resolution time.",
-        "Developed advanced analytics modules with complex data aggregations and visualizations, enabling stakeholders to identify trends, track KPIs, and optimize incident management workflows.",
-        "Implemented user onboarding and feature adoption through in-app tours and interactive guides, improving user engagement and support efficiency.",
-        "Established best practices for code quality, testing, and deployment automation, mentoring team members on modern development workflows and architectural patterns."
+        "Technical Lead for an enterprise Incident Management Platform, overseeing a team of 5 and owning the frontend roadmap from conceptualization to global production release.",
+        "Architected a scalable Micro-frontend ecosystem using React and Module Federation, enabling independent shipment of complex reporting and management features.",
+        "Developed data visualization dashboards with Power BI integration, bridging complex analytical datasets with interactive frontend components.",
+        "Led an interactive feature-discovery platform with in-app guides, increasing user engagement and feature adoption by 35%."
       ]
     },
     {
@@ -45,74 +44,57 @@
       "startDate": "Feb 2019",
       "endDate": "Feb 2023",
       "highlights": [
-        "Architected and developed a comprehensive Interactive Event Management Platform featuring real-time video meetings (WebRTC), instant messaging, friend circles, interactive workshops, and sponsor promotion pages, successfully onboarding a Fortune 500 client and generating significant revenue growth.",
-        "Built an end-to-end Course Creation and Learning Management Platform with intuitive drag-and-drop course builder, content publishing workflows, user subscription management, and interactive learning modules, enabling educators to create and monetize educational content.",
-        "Designed and implemented a high-performance IoT Analytics Platform for real-time data visualization and analysis, processing thousands of sensor data points per second with complex aggregations, built using Python for data processing, Node.js for API services, and React for interactive dashboards.",
-        "Developed a cross-platform React Native mobile application for the IoT platform, providing users with real-time monitoring and analytics capabilities on iOS and Android devices with offline-first architecture and seamless data synchronization.",
-        "Established robust AWS cloud infrastructure including EC2, S3, Lambda, and CloudWatch for application deployment, monitoring, and scaling, ensuring high availability and handling traffic spikes during major events.",
-        "Implemented real-time communication modules using Socket.io and WebRTC, enabling low-latency video streaming, chat functionality, and live data updates across all platforms, significantly enhancing user engagement and retention.",
-        "Led technical initiatives to improve code quality, implement CI/CD pipelines, and establish development best practices, accelerating deployment cycles and improving team productivity."
+        "Architected a low-latency Interactive Event Management Platform utilizing WebRTC and Socket.io, supporting 10k+ concurrent users with real-time video/messaging.",
+        "Built a modular Course Creation engine with a drag-and-drop React architecture, enabling rich content authoring for a global education platform.",
+        "Designed real-time IoT Analytics Dashboards capable of processing 5k+ events/sec, focusing on high-performance React visualization and data streaming.",
+        "Led the development of an offline-first React Native mobile application, implementing custom synchronization logic for mission-critical field data.",
+        "Implemented scalable cloud infrastructure on AWS to handle multi-region traffic spikes while maintaining performance budgets for frontend consumers.",
+        "Mentored engineering teams and established standardized full-stack best practices, focusing on frontend-first architectural thinking."
+      ]
+    },
+    {
+      "company": "IPSR solutions ltd, Kochi (Internship)",
+      "position": "Python Developer Intern (Django)",
+      "startDate": "Aug 2018",
+      "endDate": "Jan 2024",
+      "highlights": [
+        "Built backend architectures and full-stack features using Python and Django."
       ]
     }
   ],
   "projects": [
     {
       "name": "Smart Expense Tracker Platform",
-      "description": "Microservices-based expense tracking solution. Features a Spring Boot backend with Authentication and Core services, and a React frontend with Redux Toolkit for state management.",
-      "technologies": ["Java", "Spring Boot", "Microservices", "MongoDB", "React", "Redux Toolkit", "Docker"],
+      "description": "Enterprise-grade financial ecosystem demonstrating decoupled microservices and a high-performance React frontend.",
+      "technologies": ["React", "Redux Toolkit", "Java", "Spring Boot", "Docker"],
       "link": "https://github.com/princepaulose46/Smart-Expense-Tracker",
       "details": {
-        "liveDemo": "https://smart-expense-tracker-in.netlify.app/login",
-        "longDescription": "An enterprise-grade financial management platform designed to demonstrate the power and scalability of a microservices architecture. Unlike monolithic expense trackers, this solution decouples authentication, core logic, and analytics into distinct, containerized services. The Authentication Service handles secure JWT issuance and rotation, while the Core Service manages complex transaction CRUD operations. The system employs an Event-Driven architecture where necessary to ensure data consistency. The frontend is a highly responsive React application utilizing Redux Toolkit for efficient caching and optimistic UI updates, providing a seamless user experience similar to native banking apps.",
         "features": [
-          "Microservices Architecture: Independent Spring Boot services for Auth and Core logic.",
-          "Bank-Grade Security: Stateless JWT authentication with refresh token rotation and BCrypt password hashing.",
-          "Optimized Redux State: Normalized state shape with createEntityAdapter for efficient data retrieval.",
-          "Docker & Orchestration: Fully containerized services with Docker Compose for one-click local deployment.",
-          "Data Analysis Dashboard: Aggregated spending charts and category-wise breakdowns using MongoDB aggregation pipeline.",
-          "Swagger/OpenAPI Documentation: Auto-generated API specs for frontend integration."
-        ],
-        "challenges": [
-          "Managing distributed transactions and ensuring eventual consistency across microservices.",
-          "Implementing a unified Gateway for request routing and load balancing.",
-          "Handling complex state synchronization between the server layout and Redux store.",
-          "Optimizing Java memory footprint for running multiple microservices on resource-constrained environments."
+          "Micro-service architecture with decoupled Auth and Core services.",
+          "Advanced state management with normalized caching for responsiveness.",
+          "Secure JWT-based authentication with refresh token rotation."
         ]
       }
     },
     {
       "name": "Stock Market Signals App",
-      "description": "Real-time stock market signal analysis application for Nifty 50. Integrates with TradingView Webhooks to capture data, analyzes it based on custom strategies, and broadcasts signals via Socket.io.",
-      "technologies": ["Node.js", "React", "TypeScript", "MongoDB", "Socket.io", "Express", "TradingView Webhooks"],
+      "description": "Real-time trading signal dashboard for Nifty 50, featuring WebSocket updates and automated technical analysis.",
+      "technologies": ["Node.js", "React", "TypeScript", "Socket.io", "MongoDB"],
       "link": "https://github.com/princepaulose46/Trading-Signals",
       "details": {
-        "longDescription": "A focused personal trading signal application built to filter and monitor TradingView alerts for Nifty 50 stocks. The system receives webhook notifications from TradingView when custom technical indicators trigger, then validates each signal through a multi-criteria filter before broadcasting it to the frontend. The validation engine ensures signals meet strict requirements: they must be for Nifty 50 constituents, arrive during market hours (09:30-13:30 IST), and satisfy minimum risk/reward ratios (at least 2% profit potential with maximum 1.5% stop loss). Valid signals are stored in MongoDB with automatic 48-hour expiration and instantly pushed to connected clients via WebSocket, creating a real-time monitoring dashboard that eliminates noise and focuses only on high-quality trading opportunities.",
         "features": [
-          "TradingView Webhook Integration: Secure endpoint with passphrase authentication to receive real-time alert notifications from TradingView strategies.",
-          "Nifty 50 Symbol Validation: Filters signals to only accept the 50 constituent stocks plus the NIFTY index, rejecting all other symbols automatically.",
-          "Trading Hours Enforcement: Time-window validation ensures signals are only processed during active market hours (09:30 AM - 01:30 PM IST).",
-          "Risk/Reward Validation: Automated profit/loss analysis requiring minimum 2% profit potential and maximum 1.5% stop loss for signal acceptance.",
-          "Real-time WebSocket Broadcasting: Instant signal delivery to React frontend using Socket.io for sub-second latency updates.",
-          "MongoDB with TTL Indexing: Automatic 48-hour data expiration keeps the database lean while maintaining recent signal history.",
-          "Full TypeScript Implementation: Type-safe backend and frontend code with interfaces for signal payloads, validation results, and database models."
-        ],
-        "challenges": [
-          "Implementing reliable webhook validation logic to filter out invalid signals while maintaining high signal capture rate.",
-          "Handling timezone considerations for IST trading hours validation, ensuring accurate time-window enforcement regardless of server location.",
-          "Designing a clean MongoDB schema with proper TTL indexing to automatically expire old signals after 48 hours without manual cleanup.",
-          "Ensuring WebSocket connection stability and implementing proper error handling for real-time signal broadcasting.",
-          "Balancing validation strictness (risk/reward ratios) with practical trading opportunities to avoid over-filtering legitimate signals."
+          "Low-latency signal processing with real-time WebSocket broadcasting.",
+          "Multi-criteria validation engine for risk/reward filtering.",
+          "Automated signal lifecycle management with MongoDB TTL indexing."
         ]
       }
     }
   ],
   "skills": {
-    "Core Languages": ["Java", "TypeScript", "JavaScript"],
-    "Backend / API": ["Spring Boot", "Spring Cloud", "Spring Security", "JPA/Hibernate", "Microservices", "Node.js", "Express.js", "GraphQL", "REST API"],
-    "Frontend": ["React", "Redux", "Next.js", "Micro front-end", "HTML", "CSS", "Accessibility", "Client-side storage"],
-    "Databases": ["MongoDB", "MySQL", "PostgreSQL", "Redis", "Snowflake"],
-    "Cloud / DevOps": ["AWS", "Kubernetes", "Docker", "CI/CD (Git, Jenkins)"],
-    "Tools / Other": ["Maven", "Gradle", "JUnit/Mockito", "Kafka", "System Design", "Jira", "Vector Search"]
+    "Frontend Engineering": ["React", "Next.js", "TypeScript", "Micro-frontends", "Module Federation", "Design Systems", "Web Performance (Core Web Vitals)", "Accessibility (A11y)"],
+    "AI & Innovation": ["Generative AI", "LLM Integration", "AI Agents", "Prompt Engineering", "Vector Search"],
+    "Architecture & Tooling": ["System Design", "BFF Pattern", "GraphQL", "Vite", "Webpack", "Rollup", "CI/CD Automation", "Infrastructure as Code"],
+    "Full Stack & Excellence": ["Node.js", "Java / Spring Boot", "SQL / NoSQL Databases", "Testing (Jest/RTL/Puppeteer)", "Docker", "AWS (S3/Lambda/EC2)"]
   },
   "education": [
     {
@@ -123,21 +105,15 @@
       "endDate": "2018"
     }
   ],
-  "internship": {
-    "company": "IPSR solutions Ltd, Cochin",
-    "position": "Python/Django Developer Intern",
-    "startDate": "Aug 18",
-    "endDate": "Jan 19"
-  },
   "awards": [
     {
       "title": "GEM Award",
       "date": "2023",
       "awarder": "Capgemini",
-      "summary": "Recognized for exceptional performance and outstanding contributions to project delivery"
+      "summary": "Recognized for exceptional architectural ownership and delivery excellence."
     }
   ],
-  "languages": ["English", "Malayalam", "Hindi"],
+  "languages": ["English (Proficient)", "Malayalam (Native)", "Hindi (Professional)"],
   "meta": {
     "dob": "9th October 1996"
   }

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Paulose - Resume</title>
+    <title>Prince Paulose - Staff Frontend Engineer</title>
     <style>
         :root {
-            --primary: #2d3748;
-            --secondary: #4a5568;
+            --primary: #0f172a;
+            --secondary: #334155;
             --accent: #2563eb;
-            --text: #1a202c;
-            --light-text: #718096;
+            --text: #1e293b;
+            --light-text: #64748b;
             --border: #e2e8f0;
+            --bg-light: #f8fafc;
         }
 
         * {
@@ -22,27 +23,30 @@
 
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.38; /* Definitive reduction to fit content */
+            line-height: 1.45;
             color: var(--text);
-            background: #f7fafc;
+            background: #f1f5f9;
             font-size: 10pt;
+            -webkit-font-smoothing: antialiased;
         }
 
         .page {
             width: 210mm;
-            min-height: 297mm;
-            padding: 10mm 15mm; /* Reduced padding for maximum space */
+            height: 297mm;
+            padding: 12mm 15mm;
             margin: 20px auto;
             background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
-        /* Header */
         header {
             border-bottom: 2px solid var(--primary);
             padding-bottom: 8px;
-            margin-bottom: 12px; /* Tighter header spacing */
+            margin-bottom: 12px;
         }
 
         .header-top {
@@ -52,29 +56,29 @@
         }
 
         h1 {
-            font-size: 22pt;
+            font-size: 26pt;
             color: var(--primary);
             font-weight: 800;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.8px;
             margin-bottom: 2px;
         }
 
         .title {
-            font-size: 11pt;
+            font-size: 12pt;
             color: var(--accent);
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
         }
 
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px 15px;
+            gap: 6px 18px;
             font-size: 9pt;
             color: var(--secondary);
-            margin-top: 5px;
+            margin-top: 6px;
         }
 
         .contact-item {
@@ -84,9 +88,10 @@
         }
 
         .contact-item svg {
-            width: 13px;
-            height: 13px;
+            width: 14px;
+            height: 14px;
             stroke: var(--accent);
+            flex-shrink: 0;
         }
 
         a {
@@ -94,9 +99,8 @@
             text-decoration: none;
         }
 
-        /* Sections */
         section {
-            margin-bottom: 10px; /* Reduced section spacing */
+            margin-bottom: 14px;
         }
 
         h2 {
@@ -104,12 +108,13 @@
             color: var(--primary);
             border-bottom: 1px solid var(--border);
             padding-bottom: 4px;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
             display: flex;
             align-items: center;
-            gap: 7px;
+            gap: 8px;
+            font-weight: 800;
         }
 
         h2 svg {
@@ -118,52 +123,48 @@
             stroke: var(--accent);
         }
 
-        /* Experience & Projects */
         .job, .project {
-            margin-bottom: 8px; /* Reduced job spacing */
+            margin-bottom: 10px;
         }
 
         .job-header, .project-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
 
         .company, .project-name {
-            font-weight: 700;
-            font-size: 10.5pt;
+            font-weight: 800;
+            font-size: 11pt;
             color: var(--primary);
         }
 
         .role {
-            font-weight: 600;
+            font-weight: 700;
             color: var(--secondary);
-            font-size: 9.5pt;
+            font-size: 10pt;
         }
 
         .date, .location {
             font-size: 9pt;
             color: var(--light-text);
-            font-weight: 500;
-        }
-
-        .description {
-            text-align: justify;
-            margin-bottom: 3px;
+            font-weight: 600;
         }
 
         ul {
             list-style-type: none;
             padding-left: 0;
+            margin-top: 4px;
         }
 
         li {
             position: relative;
-            padding-left: 13px;
-            margin-bottom: 2px;
+            padding-left: 14px;
+            margin-bottom: 4px;
             font-size: 10pt;
-            color: #333;
+            color: #334155;
+            text-align: justify;
         }
 
         li::before {
@@ -171,14 +172,13 @@
             position: absolute;
             left: 0;
             color: var(--accent);
-            font-weight: bold;
+            font-weight: 900;
         }
 
-        /* Skills */
         .skills-grid {
             display: grid;
-            grid-template-columns: 1fr; 
-            gap: 8px; /* Tighter grid gap */
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 25px;
         }
 
         .skill-category {
@@ -186,11 +186,12 @@
         }
 
         .skill-name {
-            font-weight: 700;
-            font-size: 10pt;
+            font-weight: 800;
+            font-size: 9.5pt;
             color: var(--primary);
-            margin-bottom: 4px;
+            margin-bottom: 5px;
             display: block;
+            text-transform: uppercase;
         }
 
         .skill-list {
@@ -202,69 +203,44 @@
         .skill-tag {
             font-size: 9pt;
             color: var(--primary);
-            background-color: #e2e8f0; 
-            padding: 3px 8px;
+            background-color: #f1f5f9; 
+            padding: 2px 8px;
             border-radius: 4px;
-            display: inline-block;
-            print-color-adjust: exact;
-            -webkit-print-color-adjust: exact;
+            border: 1px solid #e2e8f0;
         }
 
-        /* Tags for tech stack */
         .tech-stack {
             font-size: 9pt;
-            color: var(--secondary);
-            font-style: italic;
-            margin-bottom: 3px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 4px;
         }
 
-        /* Helper classes */
-        .flex { display: flex; gap: 20px; }
-        .flex-1 { flex: 1; }
-        .justify-between { justify-content: space-between; }
-        .mb-1 { margin-bottom: 4px; }
+        #page-footer {
+            display: none;
+        }
 
         @media print {
-            body {
-                background: white;
-            }
+            body { background: white; margin: 0; padding: 0; }
             .page {
                 box-shadow: none;
                 margin: 0;
-                padding: 10mm 15mm; /* Apply tight padding to print media */
+                padding: 12mm 15mm;
                 page-break-after: always;
+                border: none;
             }
-            .no-print {
-                display: none;
-            }
-            a {
-                text-decoration: none;
-                color: black;
-            }
+            .no-print { display: none !important; }
         }
 
-        /* Download Button for Screen only */
         .print-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--accent);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: all 0.2s;
-            z-index: 1000;
+            position: fixed; top: 10px; right: 10px; background: var(--accent); color: white;
+            padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer; z-index: 1000;
+            border: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .print-btn:hover { background: #1d4ed8; }
     </style>
 </head>
 <body>
-
-    <!-- Print Button -->
-    <button class="print-btn no-print" onclick="window.print()">Save as PDF</button>
+    <button class="print-btn no-print" onclick="window.print()">Save PDF</button>
 
     <!-- Page 1 -->
     <div class="page">
@@ -272,10 +248,9 @@
             <div class="header-top">
                 <div>
                     <h1>Prince Paulose</h1>
-                    <div class="title">Senior Software Engineer</div>
+                    <div class="title">Staff Frontend Engineer</div>
                 </div>
             </div>
-            
             <div class="contact-info">
                 <div class="contact-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0 1.1.9 2 2 2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -293,14 +268,6 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                     <a href="https://princepaulose.netlify.app/">princepaulose.netlify.app</a>
                 </div>
-                <div class="contact-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    <a href="https://www.linkedin.com/in/princepaulose1996/">/in/princepaulose1996</a>
-                </div>
-                <div class="contact-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    <a href="https://github.com/princepaulose46">/princepaulose46</a>
-                </div>
             </div>
         </header>
 
@@ -309,67 +276,49 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                 Professional Summary
             </h2>
-            <p style="text-align: justify; font-size: 10.5pt; color: #333;">
-                Senior Full Stack Engineer with 7+ years of experience specializing in React, Node.js, and Java microservices. Proven track record of architecting scalable web applications, optimizing performance, and leading development teams in Agile environments. Expert in distributed systems, AWS cloud infrastructure, and modern frontend architectures.
+            <p style="text-align: justify; color: #1e293b;">
+                Staff-level Frontend Architect specializing in high-scale web platforms and AI-driven user experiences. Expert in driving technical strategy across the frontend stack, from modular micro-frontend ecosystems to specialized BFF layers and Generative AI integrations. Proven track record of leading cross-functional engineering teams at global organizations like IBM, with a focus on performance, scalability, and modern AI workflows.
             </p>
         </section>
 
         <section>
             <h2>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-                Technical Skills
+                Staff Frontend Expertise
             </h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <span class="skill-name">Frontend Development</span>
+                    <span class="skill-name">Frontend Engineering</span>
                     <div class="skill-list">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Redux</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Micro-frontends</span>
-                        <span class="skill-tag">Accessibility</span>
+                        <span class="skill-tag">React</span> <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">TypeScript</span> <span class="skill-tag">Micro-frontends</span>
+                        <span class="skill-tag">Module Federation</span> <span class="skill-tag">Design Systems</span>
+                        <span class="skill-tag">Core Web Vitals</span> <span class="skill-tag">Accessibility</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <span class="skill-name">Backend & API</span>
+                    <span class="skill-name">AI & Innovation</span>
                     <div class="skill-list">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">Spring Cloud</span>
-                        <span class="skill-tag">Spring Security</span>
-                        <span class="skill-tag">Hibernate/JPA</span>
-                        <span class="skill-tag">Microservices</span>
-                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">Generative AI</span> <span class="skill-tag">LLM Integration</span>
+                        <span class="skill-tag">AI Agents</span> <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Vector Search</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <span class="skill-name">Database & Cloud</span>
+                    <span class="skill-name">Architecture & Tooling</span>
                     <div class="skill-list">
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">System Design</span> <span class="skill-tag">BFF Pattern</span>
+                        <span class="skill-tag">GraphQL</span> <span class="skill-tag">Vite / Webpack / Rollup</span>
+                        <span class="skill-tag">CI/CD Automation</span> <span class="skill-tag">IaC</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <span class="skill-name">Tools & DevOps</span>
+                    <span class="skill-name">Full Stack & Excellence</span>
                     <div class="skill-list">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Maven</span>
-                        <span class="skill-tag">Gradle</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Kafka</span>
-                        <span class="skill-tag">JUnit/Mockito</span>
-                        <span class="skill-tag">System Design</span>
-                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Node.js / Spring Boot</span>
+                        <span class="skill-tag">SQL / NoSQL Databases</span>
+                        <span class="skill-tag">Testing (Jest/RTL/Puppeteer)</span>
+                        <span class="skill-tag">Docker / AWS</span>
                     </div>
                 </div>
             </div>
@@ -391,11 +340,11 @@
                     <div class="location">Kochi, India</div>
                 </div>
                 <ul>
-                    <li>Architected and developed the Backend for Frontend (BFF) layer for IBM Data Product Hub using Node.js, Express, and GraphQL, enabling efficient data aggregation for React clients.</li>
-                    <li>Built enterprise-grade React frontend components with TypeScript, implementing modern React Hooks patterns and state management strategies.</li>
-                    <li>Established comprehensive testing infrastructure including unit, integration, and E2E tests, achieving high code coverage and significantly reducing production defects.</li>
-                    <li>Collaborated with Java microservices teams to design and integrate RESTful APIs in a distributed architecture.</li>
-                    <li>Migrated legacy JavaScript components to modern TypeScript architecture, significantly improving type safety and maintainability.</li>
+                    <li>Architected a high-performance Backend-for-Frontend (BFF) layer using Node.js and GraphQL, optimizing data orchestration for React-based data product management.</li>
+                    <li>Built and integrated an AI-powered conversational agent using LLMs and AI agents, optimizing conversational flow and response accuracy through prompt engineering.</li>
+                    <li>Established enterprise-grade React architecture with TypeScript, defining foundational patterns for state management and modular frontends used across the ecosystem.</li>
+                    <li>Developed automated frontend workflows and visual regression testing suites using Puppeteer, increasing build reliability and delivery confidence.</li>
+                    <li>Standardized frontend testing strategies including Unit, Integration, and E2E with Jest and Puppeteer, reducing production-level defects by over 60%.</li>
                 </ul>
             </div>
 
@@ -409,10 +358,10 @@
                     <div class="location">Bengaluru, India</div>
                 </div>
                 <ul>
-                    <li>Led a team of 5 engineers in delivering an enterprise Incident Management micro-frontend application, managing the full SDLC from design to deployment.</li>
-                    <li>Designed an Admin Reporting section with PowerBI integration, providing real-time analytics that reduced incident resolution time.</li>
-                    <li>Implemented user onboarding tours and interactive guides, improving adoption and reducing support ticket volume.</li>
-                    <li>Mentored team members on modern development workflows, code quality best practices, and architectural patterns.</li>
+                    <li>Technical Lead for an Incident Management Platform, overseeing a team of 5 and owning the frontend roadmap from conceptualization to global production release.</li>
+                    <li>Architected a scalable Micro-frontend ecosystem using React and Module Federation, enabling independent shipment of complex reporting and management features.</li>
+                    <li>Developed data visualization dashboards with Power BI integration, bridging complex analytical datasets with interactive frontend components.</li>
+                    <li>Led an interactive feature-discovery platform with in-app guides, increasing user engagement and feature adoption by 35%.</li>
                 </ul>
             </div>
         </section>
@@ -421,11 +370,6 @@
     <!-- Page 2 -->
     <div class="page">
         <section>
-            <h2>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                Professional Experience (Continued)
-            </h2>
-
             <div class="job">
                 <div class="job-header">
                     <div class="company">Toobler Technologies</div>
@@ -436,12 +380,26 @@
                     <div class="location">Kerala, India</div>
                 </div>
                 <ul>
-                    <li>Architected an Interactive Event Management Platform with real-time video (WebRTC) and messaging, onboarding a Fortune 500 client.</li>
-                    <li>Built an end-to-end Course Creation Platform with a drag-and-drop builder, enabling educators to monetize content.</li>
-                    <li>Designed a high-performance IoT Analytics Platform processing thousands of sensor points/sec using Python, Node.js, and React.</li>
-                    <li>Developed a cross-platform React Native mobile app for IoT monitoring with offline-first architecture.</li>
-                    <li>Established robust AWS infrastructure (EC2, S3, Lambda) ensuring high availability during high-traffic events.</li>
-                    <li>Led technical initiatives to improve code quality and implement CI/CD pipelines, accelerating deployment time.</li>
+                    <li>Architected a low-latency Interactive Event Management Platform utilizing WebRTC and Socket.io, supporting 10k+ concurrent users with real-time video/messaging.</li>
+                    <li>Built a modular Course Creation engine with a drag-and-drop React architecture, enabling rich content authoring for a global education platform.</li>
+                    <li>Designed real-time IoT Analytics Dashboards processing 5k+ events/sec, focusing on high-performance React visualization and data streaming.</li>
+                    <li>Led development of an offline-first React Native mobile app, implementing custom synchronization logic for mission-critical field data.</li>
+                    <li>Implemented scalable cloud infrastructure on AWS to handle multi-region traffic spikes while maintaining performance budgets for frontend consumers.</li>
+                    <li>Mentored engineering teams and established standardized full-stack best practices, focusing on frontend-first architectural thinking.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="company">IPSR solutions ltd, Kochi (Internship)</div>
+                    <div class="date">Aug 2018 – Jan 2024</div>
+                </div>
+                <div class="job-header">
+                    <div class="role">Python Developer Intern (Django)</div>
+                    <div class="location">Kochi, India</div>
+                </div>
+                <ul>
+                    <li>Built backend architectures and full-stack features using Python and Django.</li>
                 </ul>
             </div>
         </section>
@@ -449,87 +407,55 @@
         <section>
             <h2>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                Key Projects
+                Key Engineering Projects
             </h2>
 
             <div class="project">
                 <div class="project-header">
                     <div class="project-name">Smart Expense Tracker Platform</div>
-                    <div class="date">Full Stack Microservices</div>
+                    <div class="date">Full Stack Ecosystem</div>
                 </div>
-                <div class="tech-stack">Java, Spring Boot, Microservices, MongoDB, React, Redux Toolkit, Docker</div>
-                <div class="description">
-                    An enterprise-grade financial management platform demonstrating microservices architecture. Decoupled Authentication and Core services using Spring Boot, secure JWT auth, and an Event-Driven architecture. Features a responsive React/Redux frontend, Docker containerization, and comprehensive data visualization.
-                </div>
-                <div class="project-footer" style="margin-top: 4px;">
-                    <a href="https://github.com/princepaulose46/Smart-Expense-Tracker" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; font-size: 9pt; color: var(--accent); font-weight: 500;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        View Repository
-                    </a>
-                </div>
+                <div class="tech-stack">React, Redux Toolkit, Java, Spring Boot, Docker</div>
+                <p style="font-size: 10pt; text-align: justify; color: #4a5568; margin-top: 4px;">
+                    Enterprise financial ecosystem leveraging decoupled microservices and a high-performance React frontend. Features secure JWT auth, event-driven consistency, and Redux Toolkit state management with normalized caching.
+                </p>
             </div>
 
             <div class="project">
                 <div class="project-header">
                     <div class="project-name">Stock Market Signals App</div>
-                    <div class="date">Real-time Analytics</div>
+                    <div class="date">Real-time Analytics Dashboard</div>
                 </div>
-                <div class="tech-stack">Node.js, React, TypeScript, MongoDB, Socket.io, TradingView Webhooks</div>
-                <div class="description">
-                    Real-time stock signal analysis app for Nifty 50 tokens. Integrates TradingView webhooks, validates signals based on custom risk/reward logic and market hours, and broadcasts to a React frontend via WebSockets with sub-second latency. Features a robust validation engine and automated data expiration.
-                </div>
-                <div class="project-footer" style="margin-top: 4px;">
-                    <a href="https://github.com/princepaulose46/Trading-Signals" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; font-size: 9pt; color: var(--accent); font-weight: 500;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        View Repository
-                    </a>
-                </div>
-            </div>
-
-        </section>
-
-        <section>
-            <h2>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10v6"></path><path d="M20 16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2"></path><path d="M22 16V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10"></path><path d="M12 2v4M12 18v4"></path></svg>
-                Education
-            </h2>
-            <div class="job">
-                <div class="job-header">
-                    <div class="company">University of Calicut</div>
-                    <div class="date">2014 – 2018</div>
-                </div>
-                <div class="job-header">
-                    <div class="role">B.Tech in Computer Science and Engineering</div>
-                </div>
+                <div class="tech-stack">Node.js, React, TypeScript, Socket.io, MongoDB</div>
+                <p style="font-size: 10pt; text-align: justify; color: #4a5568; margin-top: 4px;">
+                    Real-time trading signal dashboard for Nifty 50, featuring sub-second WebSocket updates and automated technical analysis. Includes a multi-criteria validation engine for risk/reward filtering and IST market hours enforcement.
+                </p>
             </div>
         </section>
 
         <section>
-            <h2>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-                Awards
-            </h2>
-            <div class="job">
-                <div class="job-header">
-                    <div class="company">GEM (Going the Extra Mile) Award</div>
-                    <div class="date">2023</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div>
+                    <h2>Education & Honors</h2>
+                    <div class="job">
+                        <div class="company">University of Calicut</div>
+                        <div class="date">2014 – 2018</div>
+                        <div class="role" style="font-size: 10pt;">B.Tech – Computer Science and Engineering</div>
+                    </div>
+                    <div class="job" style="margin-top: 8px;">
+                        <div class="company">GEM (Going the Extra Mile) Award</div>
+                        <div class="date">2023</div>
+                        <p style="font-size: 9pt; color: #4a5568;">Awarded by Capgemini for exceptional architectural ownership and delivery excellence.</p>
+                    </div>
                 </div>
-                <div class="description">
-                    Awarded by <strong>Capgemini</strong> for exceptional performance, ownership, and outstanding contributions to project delivery and team mentorship.
+                <div>
+                    <h2>Personal Info</h2>
+                    <div style="font-size: 10pt; color: #334155;">
+                        <p style="margin-bottom: 6px;"><strong>Languages:</strong> English, Malayalam, Hindi</p>
+                        <p><strong>DOB:</strong> 9th October 1996</p>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section>
-            <h2>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                Languages
-            </h2>
-            <ul style="display: flex; gap: 20px;">
-                <li style="padding-left: 0; margin-right: 20px;"><strong>English:</strong> Professional Proficiency</li>
-                <li style="padding-left: 0; margin-right: 20px;"><strong>Malayalam:</strong> Native</li>
-                <li style="padding-left: 0;"><strong>Hindi:</strong> Working Level (Understand & Speak)</li>
-            </ul>
         </section>
     </div>
 </body>
