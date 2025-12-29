@@ -20,10 +20,9 @@
       "endDate": "Present",
       "highlights": [
         "Architected a high-performance Backend-for-Frontend (BFF) layer using Node.js and GraphQL, optimizing data orchestration for React-based data product management.",
-        "Built and integrated an AI-powered conversational agent using LLMs and AI agents, optimizing conversational flow and response accuracy through prompt engineering.",
-        "Established enterprise-grade React architecture with TypeScript, defining foundational patterns for state management and modular frontends used across the ecosystem.",
-        "Developed automated frontend workflows and visual regression testing suites using Puppeteer, increasing build reliability and delivery confidence.",
-        "Standardized frontend testing strategies including Unit, Integration, and E2E with Jest and Puppeteer, reducing production-level defects by over 60%."
+        "Built and integrated an AI-powered conversational agent using LLMs and AI agents, achieving substantial improvements in response accuracy and workflow efficiency.",
+        "Established enterprise-grade React architecture with TypeScript, defining foundational patterns and shared libraries used across the global engineering ecosystem.",
+        "Standardized frontend testing strategies (Unit, Integration, E2E) with Jest and Puppeteer, reducing production defects by 60% and enabling automated visual regression."
       ]
     },
     {
@@ -32,10 +31,9 @@
       "startDate": "Mar 2023",
       "endDate": "April 2024",
       "highlights": [
-        "Technical Lead for an enterprise Incident Management Platform, overseeing a team of 5 and owning the frontend roadmap from conceptualization to global production release.",
-        "Architected a scalable Micro-frontend ecosystem using React and Module Federation, enabling independent shipment of complex reporting and management features.",
-        "Developed data visualization dashboards with Power BI integration, bridging complex analytical datasets with interactive frontend components.",
-        "Led an interactive feature-discovery platform with in-app guides, increasing user engagement and feature adoption by 35%."
+        "Technical Lead for an enterprise Incident Management Platform, overseeing a team of 5 and owning the micro-frontend roadmap using React and Module Federation.",
+        "Architected a scalable frontend ecosystem that enabled independent shipment of critical reporting features to global production.",
+        "Developed data visualization dashboards with Power BI integration, bridging analytical datasets with interactive frontend components."
       ]
     },
     {
