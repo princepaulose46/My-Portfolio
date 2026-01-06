@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Prince Paulose",
-    "label": "Staff Frontend Engineer",
+    "label": "Senior Software Engineer",
     "email": "princepaulose1996@gmail.com",
     "phone": "+91 7591944220",
     "location": "Kerala, India",
@@ -10,7 +10,7 @@
       "github": "https://github.com/princepaulose46"
     },
     "yearsOfExperience": 7,
-    "summary": "Staff-level Frontend Architect specializing in high-scale web platforms and AI-driven user experiences. Expert in driving technical strategy across the frontend stack, from modular micro-frontend ecosystems to specialized BFF layers and Generative AI integrations. Proven track record of leading cross-functional engineering teams at global organizations like IBM, with a focus on performance, scalability, and modern AI workflows."
+    "summary": "Senior Software Engineer specializing in high-scale web platforms and AI-driven user experiences. Expert in driving technical strategy across the full stack, from modular micro-frontend ecosystems to specialized BFF layers and Generative AI integrations. Proven track record of leading cross-functional engineering teams at global organizations like IBM, with a focus on performance, scalability, and modern AI workflows."
   },
   "experience": [
     {
