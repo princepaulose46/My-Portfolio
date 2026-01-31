@@ -1,0 +1,43 @@
+.cursor-follower {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-accent-cyan) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: var(--z-tooltip);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  transition: width 0.2s ease, height 0.2s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.cursor-follower::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-accent-cyan);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.cursor-follower.cursor-hover {
+  width: 40px;
+  height: 40px;
+}
+
+.cursor-follower.cursor-hover::before {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 1024px) {
+  .cursor-follower {
+    display: none;
+  }
+}

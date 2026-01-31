@@ -1,70 +1,135 @@
-import './Hero.css';
-import resumeData from '../data/resume.json';
 import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
+import { Github, Linkedin, Mail, Download, ArrowDown } from 'lucide-react';
+import MagneticButton from './MagneticButton';
+import AnimatedSection from './AnimatedSection';
+import resumeData from '../data/resume.json';
+import './Hero.css';
 
 const Hero = () => {
     const { basics } = resumeData;
 
+    const floatingShapes = [
+        { delay: 0, duration: 3 },
+        { delay: 0.5, duration: 4 },
+        { delay: 1, duration: 3.5 },
+        { delay: 1.5, duration: 4.5 },
+    ];
+
     return (
-        <section id="hero" className="section hero">
-            <div className="hero-bg-glow"></div>
-            <div className="container">
-                <div className="hero-content">
-                    <motion.p
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.2 }}
-                        className="greeting"
-                    >
-                        Hi, my name is
-                    </motion.p>
+        <section id="hero" className="hero">
+            {/* Floating geometric shapes */}
+            <div className="floating-shapes">
+                {floatingShapes.map((shape, index) => (
+                    <motion.div
+                        key={index}
+                        className={`shape shape-${index + 1}`}
+                        animate={{
+                            y: [-20, 20, -20],
+                            rotate: [0, 180, 360],
+                        }}
+                        transition={{
+                            duration: shape.duration,
+                            delay: shape.delay,
+                            repeat: Infinity,
+                            ease: 'easeInOut',
+                        }}
+                    />
+                ))}
+            </div>
+
+            <div className="container hero-content">
+                <AnimatedSection direction="down" delay={0.2}>
                     <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
+                        className="hero-title"
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3 }}
-                        className="name"
+                        transition={{ duration: 0.8, delay: 0.3 }}
                     >
                         {basics.name}
                     </motion.h1>
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.35 }}
-                        className="title-wrapper"
-                    >
-                        <h2 className="title">{basics.label}</h2>
-                        <span className="experience-badge">{basics.yearsOfExperience}+ Years Experience</span>
-                    </motion.div>
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.5 }}
-                        style={{ color: 'var(--text-secondary)', marginBottom: '2rem', maxWidth: '500px' }}
-                    >
-                        I build scalable, high-performance applications with React, Node.js, Java, and modern microservices architecture. Specializing in full-stack development and cloud solutions.
-                    </motion.p>
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6 }}
-                        className="cta-buttons"
-                    >
-                        <a href="#experience" className="btn btn-primary">Check my work</a>
-                        <a href="/Prince_Paulose_Resume.pdf" download="Prince_Paulose_Resume.pdf" className="btn btn-outline">
-                            <Download size={18} />
-                            Download Resume
+                </AnimatedSection>
+
+                <AnimatedSection direction="up" delay={0.4}>
+                    <div className="hero-subtitle">
+                        <TypeAnimation
+                            sequence={[
+                                basics.label,
+                                2000,
+                                'Full Stack Developer',
+                                2000,
+                                'AI Integration Specialist',
+                                2000,
+                                'Frontend Architect',
+                                2000,
+                            ]}
+                            wrapper="h2"
+                            speed={50}
+                            repeat={Infinity}
+                        />
+                    </div>
+                </AnimatedSection>
+
+                <AnimatedSection direction="up" delay={0.6}>
+                    <p className="hero-description">
+                        {basics.summary}
+                    </p>
+                </AnimatedSection>
+
+                <AnimatedSection direction="up" delay={0.8}>
+                    <div className="hero-actions">
+                        <MagneticButton
+                            className="btn-primary"
+                            onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+                        >
+                            View Projects
+                        </MagneticButton>
+                        <MagneticButton
+                            className="btn-secondary"
+                            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                        >
+                            Get In Touch
+                        </MagneticButton>
+                    </div>
+                </AnimatedSection>
+
+                <AnimatedSection direction="up" delay={1}>
+                    <div className="hero-social">
+                        <a
+                            href={basics.profiles.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="social-link"
+                            aria-label="GitHub"
+                        >
+                            <Github size={24} />
                         </a>
-                    </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.7 }}
-                        className="hero-quote"
-                    >
-                        <p>"Code is like humor. When you have to explain it, it's bad." — Cory House</p>
-                    </motion.div>
-                </div>
+                        <a
+                            href={basics.profiles.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="social-link"
+                            aria-label="LinkedIn"
+                        >
+                            <Linkedin size={24} />
+                        </a>
+                        <a
+                            href={`mailto:${basics.email}`}
+                            className="social-link"
+                            aria-label="Email"
+                        >
+                            <Mail size={24} />
+                        </a>
+                    </div>
+                </AnimatedSection>
+
+                <motion.div
+                    className="scroll-indicator"
+                    animate={{ y: [0, 10, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                >
+                    <ArrowDown size={24} />
+                </motion.div>
             </div>
         </section>
     );

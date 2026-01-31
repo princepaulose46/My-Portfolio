@@ -1,1 +1,10 @@
-/* Cleared default App styles in favor of index.css */
+.app {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-content {
+  position: relative;
+  z-index: var(--z-base);
+}

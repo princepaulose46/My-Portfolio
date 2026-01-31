@@ -1,47 +1,72 @@
+.skills {
+  background: linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: var(--space-2xl);
+  margin-top: var(--space-2xl);
 }
 
 .skill-category {
-  background: var(--bg-secondary);
-  padding: 1.5rem;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
 }
 
-.skill-category:hover {
-  transform: translateY(-5px);
-  background: rgba(30, 41, 59, 0.8);
+.skill-category::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(0, 240, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  pointer-events: none;
+}
+
+.skill-category:hover::after {
+  opacity: 1;
 }
 
 .category-title {
-  font-size: 1.2rem;
-  color: var(--accent-primary);
-  margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--glass-border);
 }
 
-.skill-tags {
+.skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: var(--space-sm);
 }
 
-.skill-tag {
-  background: rgba(56, 189, 248, 0.1);
-  color: var(--text-primary);
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
-  border: 1px solid rgba(56, 189, 248, 0.2);
-}
-
-.skill-tag:hover {
-  background: var(--accent-primary);
-  color: var(--bg-primary);
+.skill-item {
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
   cursor: default;
+}
+
+.skill-item:hover {
+  color: var(--color-accent-cyan);
+  border-color: var(--color-accent-cyan);
+  background: rgba(0, 240, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }

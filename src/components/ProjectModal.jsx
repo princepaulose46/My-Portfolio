@@ -1,96 +1,86 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { X, CheckCircle, AlertTriangle } from "lucide-react";
-import "./ProjectModal.css";
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, CheckCircle, ExternalLink } from 'lucide-react';
+import './ProjectModal.css';
 
-const ProjectModal = ({ selectedProject, onClose }) => {
+const ProjectModal = ({ project, onClose }) => {
+    if (!project) return null;
+
     return (
         <AnimatePresence>
-            {selectedProject && (
-                <>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        onClick={onClose}
-                        className="modal-backdrop"
-                    />
-                    <motion.div
-                        initial={{ scale: 0.9, opacity: 0, y: 20 }}
-                        animate={{ scale: 1, opacity: 1, y: 0 }}
-                        exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                        transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                        className="modal-container glass"
-                    >
-                        <button onClick={onClose} className="modal-close-btn">
-                            <X size={24} />
-                        </button>
+            <motion.div
+                className="modal-backdrop"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={onClose}
+            >
+                <motion.div
+                    className="modal-content glass gradient-border"
+                    initial={{ scale: 0.8, opacity: 0, y: 50 }}
+                    animate={{ scale: 1, opacity: 1, y: 0 }}
+                    exit={{ scale: 0.8, opacity: 0, y: 50 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <button className="modal-close" onClick={onClose} aria-label="Close modal">
+                        <X size={24} />
+                    </button>
 
-                        <div className="modal-content">
-                            <h2 className="modal-title">{selectedProject.name}</h2>
-                            <div className="modal-tech-stack">
-                                {selectedProject.technologies.map((tech, idx) => (
-                                    <span key={idx} className="tech-tag">{tech}</span>
-                                ))}
-                            </div>
+                    <div className="modal-header">
+                        <h2 className="modal-title gradient-text">{project.name}</h2>
+                        {project.link && (
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="modal-link"
+                            >
+                                <ExternalLink size={20} />
+                                <span>View on GitHub</span>
+                            </a>
+                        )}
+                    </div>
 
-                            <div className="modal-scroll-area">
-                                <p className="modal-description">
-                                    {selectedProject.details?.longDescription || selectedProject.description}
-                                </p>
+                    <p className="modal-description">{project.description}</p>
 
-                                {selectedProject.details?.features && (
-                                    <div className="modal-section">
-                                        <h3>Key Features</h3>
-                                        <ul className="feature-list">
-                                            {selectedProject.details.features.map((feature, idx) => (
-                                                <li key={idx}>
-                                                    <CheckCircle size={16} className="feature-icon" />
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                )}
-
-                                {selectedProject.details?.challenges && (
-                                    <div className="modal-section">
-                                        <h3>Technical Challenges</h3>
-                                        <ul className="challenge-list">
-                                            {selectedProject.details.challenges.map((challenge, idx) => (
-                                                <li key={idx}>
-                                                    <AlertTriangle size={16} className="challenge-icon" />
-                                                    {challenge}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                )}
-                            </div>
-
-                            <div className="modal-actions">
-                                {selectedProject.details?.liveDemo && (
-                                    <a
-                                        href={selectedProject.details.liveDemo}
-                                        className="btn btn-primary"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                    {project.details && project.details.features && (
+                        <div className="modal-features">
+                            <h3 className="features-title">Key Features</h3>
+                            <ul className="features-list">
+                                {project.details.features.map((feature, index) => (
+                                    <motion.li
+                                        key={index}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ delay: index * 0.1 }}
                                     >
-                                        View Live Demo
-                                    </a>
-                                )}
-                                <a
-                                    href={selectedProject.link}
-                                    className={selectedProject.details?.liveDemo ? "btn btn-outline" : "btn btn-primary"}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    View Code
-                                </a>
-                            </div>
+                                        <CheckCircle size={20} className="feature-icon" />
+                                        <span>{feature}</span>
+                                    </motion.li>
+                                ))}
+                            </ul>
                         </div>
-                    </motion.div>
-                </>
-            )}
+                    )}
+
+                    <div className="modal-tech">
+                        <h3 className="tech-title">Technologies Used</h3>
+                        <div className="tech-stack-modal">
+                            {project.technologies.map((tech, index) => (
+                                <motion.span
+                                    key={index}
+                                    className="tech-badge-modal"
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ delay: index * 0.05 }}
+                                    whileHover={{ scale: 1.1 }}
+                                >
+                                    {tech}
+                                </motion.span>
+                            ))}
+                        </div>
+                    </div>
+                </motion.div>
+            </motion.div>
         </AnimatePresence>
     );
 };
