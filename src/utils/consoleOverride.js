@@ -4,8 +4,8 @@
  */
 
 const initConsole = () => {
-  // Only override in production
-  if (import.meta.env.PROD) {
+  // Only override in production (check for production mode)
+  if (import.meta.env.MODE === 'production') {
     // Store original console methods
     const noop = () => {};
     
