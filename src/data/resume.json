@@ -1,118 +1,162 @@
 {
-  "basics": {
-    "name": "Prince Paulose",
-    "label": "Senior Software Engineer",
-    "email": "princepaulose1996@gmail.com",
-    "phone": "+91 7591944220",
-    "location": "Kerala, India",
-    "profiles": {
-      "linkedin": "https://www.linkedin.com/in/princepaulose1996/",
-      "github": "https://github.com/princepaulose46"
-    },
-    "yearsOfExperience": 7,
-    "summary": "Senior Software Engineer specializing in high-scale web platforms and AI-driven user experiences. Expert in driving technical strategy across the full stack, from modular micro-frontend ecosystems to specialized BFF layers and Generative AI integrations. Proven track record of leading cross-functional engineering teams at global organizations like IBM, with a focus on performance, scalability, and modern AI workflows."
-  },
-  "experience": [
-    {
-      "company": "IBM India Software Labs",
-      "position": "Senior Software Developer",
-      "startDate": "May 2024",
-      "endDate": "Present",
-      "highlights": [
-        "Architected a high-performance Backend-for-Frontend (BFF) layer using Node.js and GraphQL, optimizing data orchestration for React-based data product management.",
-        "Built and integrated an AI-powered conversational agent using LLMs and AI agents, achieving substantial improvements in response accuracy and workflow efficiency.",
-        "Established enterprise-grade React architecture with TypeScript, defining foundational patterns and shared libraries used across the global engineering ecosystem.",
-        "Standardized frontend testing strategies (Unit, Integration, E2E) with Jest and Puppeteer, reducing production defects by 60% and enabling automated visual regression."
-      ]
-    },
-    {
-      "company": "Capgemini",
-      "position": "Lead Software Engineer",
-      "startDate": "Mar 2023",
-      "endDate": "April 2024",
-      "highlights": [
-        "Technical Lead for an enterprise Incident Management Platform, overseeing a team of 5 and owning the micro-frontend roadmap using React and Module Federation.",
-        "Architected a scalable frontend ecosystem that enabled independent shipment of critical reporting features to global production.",
-        "Developed data visualization dashboards with Power BI integration, bridging analytical datasets with interactive frontend components."
-      ]
-    },
-    {
-      "company": "Toobler Technologies",
-      "position": "Senior Software Engineer",
-      "startDate": "Feb 2019",
-      "endDate": "Feb 2023",
-      "highlights": [
-        "Architected a low-latency Interactive Event Management Platform utilizing WebRTC and Socket.io, supporting 10k+ concurrent users with real-time video/messaging.",
-        "Built a modular Course Creation engine with a drag-and-drop React architecture, enabling rich content authoring for a global education platform.",
-        "Designed real-time IoT Analytics Dashboards capable of processing 5k+ events/sec, focusing on high-performance React visualization and data streaming.",
-        "Led the development of an offline-first React Native mobile application, implementing custom synchronization logic for mission-critical field data.",
-        "Implemented scalable cloud infrastructure on AWS to handle multi-region traffic spikes while maintaining performance budgets for frontend consumers.",
-        "Mentored engineering teams and established standardized full-stack best practices, focusing on frontend-first architectural thinking."
-      ]
-    },
-    {
-      "company": "IPSR solutions ltd, Kochi (Internship)",
-      "position": "Python Developer Intern (Django)",
-      "startDate": "Aug 2018",
-      "endDate": "Jan 2019",
-      "highlights": [
-        "Built backend architectures and full-stack features using Python and Django."
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "name": "Smart Expense Tracker Platform",
-      "description": "Enterprise-grade financial ecosystem demonstrating decoupled microservices and a high-performance React frontend.",
-      "technologies": ["React", "Redux Toolkit", "Java", "Spring Boot", "Docker"],
-      "link": "https://github.com/princepaulose46/Smart-Expense-Tracker",
-      "details": {
-        "features": [
-          "Micro-service architecture with decoupled Auth and Core services.",
-          "Advanced state management with normalized caching for responsiveness.",
-          "Secure JWT-based authentication with refresh token rotation."
-        ]
-      }
-    },
-    {
-      "name": "Stock Market Signals App",
-      "description": "Real-time trading signal dashboard for Nifty 50, featuring WebSocket updates and automated technical analysis.",
-      "technologies": ["Node.js", "React", "TypeScript", "Socket.io", "MongoDB"],
-      "link": "https://github.com/princepaulose46/Trading-Signals",
-      "details": {
-        "features": [
-          "Low-latency signal processing with real-time WebSocket broadcasting.",
-          "Multi-criteria validation engine for risk/reward filtering.",
-          "Automated signal lifecycle management with MongoDB TTL indexing."
-        ]
-      }
-    }
-  ],
-  "skills": {
-    "Frontend Engineering": ["React", "Next.js", "TypeScript", "Micro-frontends", "Module Federation", "Design Systems", "Web Performance (Core Web Vitals)", "Accessibility (A11y)"],
-    "AI & Innovation": ["Generative AI", "LLM Integration", "AI Agents", "Prompt Engineering", "Vector Search"],
-    "Architecture & Tooling": ["System Design", "BFF Pattern", "GraphQL", "Vite", "Webpack", "Rollup", "CI/CD Automation", "Infrastructure as Code"],
-    "Full Stack & Excellence": ["Node.js", "Java / Spring Boot", "SQL / NoSQL Databases", "Testing (Jest/RTL/Puppeteer)", "Docker", "AWS (S3/Lambda/EC2)"]
-  },
-  "education": [
-    {
-      "institution": "University of Calicut",
-      "area": "Computer Science and Engineering",
-      "studyType": "B.Tech",
-      "startDate": "2014",
-      "endDate": "2018"
-    }
-  ],
-  "awards": [
-    {
-      "title": "GEM Award",
-      "date": "2023",
-      "awarder": "Capgemini",
-      "summary": "Recognized for exceptional architectural ownership and delivery excellence."
-    }
-  ],
-  "languages": ["English (Proficient)", "Malayalam (Native)", "Hindi (Professional)"],
-  "meta": {
-    "dob": "9th October 1996"
-  }
+	"basics": {
+		"name": "Prince Paulose",
+		"label": "Senior Software Engineer",
+		"email": "princepaulose1996@gmail.com",
+		"phone": "+91 7591944220",
+		"location": "Kerala, India",
+		"profiles": {
+			"linkedin": "https://www.linkedin.com/in/princepaulose1996/",
+			"github": "https://github.com/princepaulose46"
+		},
+		"yearsOfExperience": 7,
+		"summary": "Senior Software Engineer with around 8 years of experience building scalable product platforms using React, TypeScript, and Node.js. Strong background in product-driven engineering, developer experience, and system design. Proven ability to own complex systems end-to-end, mentor engineers, and ship reliable software at scale. Recently focused on AI agent systems for engineering productivity, combining LLMs with real-world workflows."
+	},
+	"experience": [
+		{
+			"company": "IBM India Software Labs",
+			"position": "Senior Software Engineer",
+			"startDate": "May 2024",
+			"endDate": "Present",
+			"highlights": [
+				"Lead the implementation of Data Product Hub, a next-generation platform for enterprise-wide discovery, governance, and reuse of data products.",
+				"Architected scalable self-serve workflows and API-first delivery mechanisms using Node.js to streamline data product publication and consumption.",
+				"Built metadata indexing and search features that significantly reduced data lookup times by enabling discovery through domain tags and usage context.",
+				"Integrated data contract enforcement and lifecycle policies to ensure strict security and compliance standards across all curated data assets.",
+				"Standardized engineering excellence through comprehensive testing strategies (E2E), observability pipelines, and performance profiling."
+			]
+		},
+		{
+			"company": "Capgemini",
+			"position": "Lead Software Engineer",
+			"startDate": "Mar 2023",
+			"endDate": "Apr 2024",
+			"highlights": [
+				"Led development of a large-scale incident and operations management platform used by distributed teams across regions.",
+				"Designed and owned a Backend-for-Frontend (Node.js + GraphQL) that simplified data access for React clients and reduced frontend complexity.",
+				"Built internal tooling and abstractions that reduced feature development time and improved code consistency across teams.",
+				"Served as technical lead for a team of 5 engineers, balancing delivery, code quality, and long-term maintainability."
+			]
+		},
+		{
+			"company": "Toobler Technologies",
+			"position": "Senior Software Engineer",
+			"startDate": "Feb 2019",
+			"endDate": "Feb 2023",
+			"highlights": [
+				"Architected a low-latency Interactive Event Management Platform utilizing WebRTC and Socket.io, supporting 10k+ concurrent users.",
+				"Built a modular Course Creation engine with a drag-and-drop React architecture, enabling rich content authoring for a global education platform.",
+				"Designed real-time IoT Analytics Dashboards processing 5k+ events/sec, focusing on high-performance React visualization and data streaming.",
+				"Mentored engineering teams and established standardized full-stack best practices, focusing on frontend-first architectural thinking."
+			]
+		},
+		{
+			"company": "IPSR solutions ltd, Kochi (Internship)",
+			"position": "Python Developer Intern (Django)",
+			"startDate": "Aug 2018",
+			"endDate": "Jan 2019",
+			"highlights": [
+				"Built backend architectures and full-stack features using Python and Django."
+			]
+		}
+	],
+	"projects": [
+		{
+			"name": "AI Engineering Productivity Agent",
+			"description": "Multi-agent AI system designed to assist software engineers with everyday development tasks like codebase intelligence, planning, and review.",
+			"technologies": [
+				"React",
+				"TypeScript",
+				"Node.js",
+				"LLMs",
+				"Vector Search"
+			],
+			"link": "#",
+			"details": {
+				"features": [
+					"Designed and built a multi-agent AI system to assist software engineers with everyday development tasks.",
+					"Implemented agents for Codebase intelligence (semantic search, impact analysis), Ticket-to-implementation planning, and PR review assistance.",
+					"Built a lightweight orchestration layer enabling agents to reason, call tools, and provide explainable outputs.",
+					"Focused on developer trust, safety, and real-world usefulness, mirroring real product engineering workflows."
+				]
+			}
+		},
+		{
+			"name": "Smart Expense Tracker Platform",
+			"description": "Enterprise-grade financial ecosystem demonstrating decoupled microservices and a high-performance React frontend.",
+			"technologies": [
+				"React",
+				"Redux Toolkit",
+				"Java",
+				"Spring Boot",
+				"Docker"
+			],
+			"link": "https://github.com/princepaulose46/Smart-Expense-Tracker",
+			"details": {
+				"features": [
+					"Micro-service architecture with decoupled Auth and Core services.",
+					"Advanced state management with normalized caching for responsiveness.",
+					"Secure JWT-based authentication with refresh token rotation."
+				]
+			}
+		}
+	],
+	"skills": {
+		"Product Engineering": [
+			"React",
+			"TypeScript",
+			"Next.js",
+			"Node.js",
+			"REST & GraphQL",
+			"Frontend Architecture",
+			"Performance Optimization"
+		],
+		"System Design & Backend": [
+			"Microservices",
+			"API Design",
+			"BFF Pattern",
+			"Event-Driven Systems",
+			"SQL & NoSQL",
+			"Caching",
+			"Async Processing"
+		],
+		"AI & Applied ML": [
+			"LLM Integration",
+			"AI Agents",
+			"Tool-Calling",
+			"Vector Search"
+		],
+		"Cloud & Engineering Standards": [
+			"AWS (Lambda, EC2, S3)",
+			"Docker",
+			"CI/CD",
+			"Testing (Jest, RTL, E2E)",
+			"Code Reviews"
+		]
+	},
+	"education": [
+		{
+			"institution": "University of Calicut",
+			"area": "Computer Science and Engineering",
+			"studyType": "B.Tech",
+			"startDate": "2014",
+			"endDate": "2018"
+		}
+	],
+	"awards": [
+		{
+			"title": "GEM Award",
+			"date": "2023",
+			"awarder": "Capgemini",
+			"summary": "Recognized for exceptional architectural ownership and delivery excellence."
+		}
+	],
+	"languages": [
+		"English (Proficient)",
+		"Malayalam (Native)",
+		"Hindi (Professional)"
+	],
+	"meta": {
+		"dob": "9th October 1996"
+	}
 }
