@@ -35,7 +35,8 @@
 				"Led development of a large-scale incident and operations management platform used by distributed teams across regions.",
 				"Designed and owned a Backend-for-Frontend (Node.js + GraphQL) that simplified data access for React clients and reduced frontend complexity.",
 				"Built internal tooling and abstractions that reduced feature development time and improved code consistency across teams.",
-				"Served as technical lead for a team of 5 engineers, balancing delivery, code quality, and long-term maintainability."
+				"Served as technical lead for a team of 5 engineers, balancing delivery, code quality, and long-term maintainability.",
+				"Designed and built an in-app interactive tour for an existing Vue.js application to improve user onboarding."
 			]
 		},
 		{
@@ -47,7 +48,8 @@
 				"Architected a low-latency Interactive Event Management Platform utilizing WebRTC and Socket.io, supporting 10k+ concurrent users.",
 				"Built a modular Course Creation engine with a drag-and-drop React architecture, enabling rich content authoring for a global education platform.",
 				"Designed real-time IoT Analytics Dashboards processing 5k+ events/sec, focusing on high-performance React visualization and data streaming.",
-				"Mentored engineering teams and established standardized full-stack best practices, focusing on frontend-first architectural thinking."
+				"Mentored engineering teams and established standardized full-stack best practices, focusing on frontend-first architectural thinking.",
+				"Developed a high-performance React Native application from scratch for the same IoT project to enable mobile monitoring."
 			]
 		},
 		{
@@ -61,26 +63,6 @@
 		}
 	],
 	"projects": [
-		{
-			"name": "AI Engineering Productivity Agent",
-			"description": "Multi-agent AI system designed to assist software engineers with everyday development tasks like codebase intelligence, planning, and review.",
-			"technologies": [
-				"React",
-				"TypeScript",
-				"Node.js",
-				"LLMs",
-				"Vector Search"
-			],
-			"link": "#",
-			"details": {
-				"features": [
-					"Designed and built a multi-agent AI system to assist software engineers with everyday development tasks.",
-					"Implemented agents for Codebase intelligence (semantic search, impact analysis), Ticket-to-implementation planning, and PR review assistance.",
-					"Built a lightweight orchestration layer enabling agents to reason, call tools, and provide explainable outputs.",
-					"Focused on developer trust, safety, and real-world usefulness, mirroring real product engineering workflows."
-				]
-			}
-		},
 		{
 			"name": "Smart Expense Tracker Platform",
 			"description": "Enterprise-grade financial ecosystem demonstrating decoupled microservices and a high-performance React frontend.",
@@ -105,16 +87,16 @@
 		"Product Engineering": [
 			"React",
 			"TypeScript",
-			"Next.js",
 			"Node.js",
+			"Next.js",
+			"Micro Frontends",
 			"REST & GraphQL",
-			"Frontend Architecture",
-			"Performance Optimization"
+			"Performance Optimization",
+			"HTML/CSS"
 		],
 		"System Design & Backend": [
 			"Microservices",
 			"API Design",
-			"BFF Pattern",
 			"Event-Driven Systems",
 			"SQL & NoSQL",
 			"Caching",
@@ -129,7 +111,7 @@
 		"Cloud & Engineering Standards": [
 			"AWS (Lambda, EC2, S3)",
 			"Docker",
-			"CI/CD",
+			"Jenkins",
 			"Testing (Jest, RTL, E2E)",
 			"Code Reviews"
 		]
@@ -146,7 +128,7 @@
 	"awards": [
 		{
 			"title": "GEM Award",
-			"date": "2023",
+			"date": "2024",
 			"awarder": "Capgemini",
 			"summary": "Recognized for exceptional architectural ownership and delivery excellence."
 		}
@@ -155,8 +137,5 @@
 		"English (Proficient)",
 		"Malayalam (Native)",
 		"Hindi (Professional)"
-	],
-	"meta": {
-		"dob": "9th October 1996"
-	}
+	]
 }
