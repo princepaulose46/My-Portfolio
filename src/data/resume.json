@@ -9,8 +9,7 @@
 			"linkedin": "https://www.linkedin.com/in/princepaulose1996/",
 			"github": "https://github.com/princepaulose46"
 		},
-		"yearsOfExperience": 8,
-		"summary": "Senior Software Engineer with 8 years of experience building scalable web applications using React, TypeScript, Node.js, and MongoDB. Experienced in delivering full-stack MERN solutions across enterprise and product environments, from database design and REST/GraphQL API development to performant frontend delivery. Strong background in leading engineering teams, establishing technical standards, and shipping reliable software at scale. Additional hands-on experience building backend services with Python and Django."
+		"summary": "Senior Software Engineer with 8 years of experience building scalable web applications and distributed systems using React, Node.js, and cloud technologies. Recently exploring AI-assisted development and LLM-based workflows to enhance engineering productivity. Additional hands-on experience building backend services with Python and Django."
 	},
 	"experience": [
 		{
@@ -25,7 +24,7 @@
 				"Built the data consumer <strong>subscription experience</strong> — including product discovery, search and filtering by business domain, subscription requests, business justification capture, and custom approval workflow integration.",
 				"Engineered multi-modal data delivery capabilities on the consumer side, supporting <strong>Apache Arrow Flight over gRPC</strong> for high-performance live data streaming, direct downloads, URL-based access, and data extract delivery to target connections including <strong>watsonx.data</strong> and Azure Databricks.",
 				"Contributed to data governance features including <strong>data contracts</strong> with Terms & Conditions and SLA enforcement, business domain organisation, and metadata enrichment pipelines that enabled producers to surface rich technical and business context for each asset.",
-				"Leveraged <strong>Bob</strong>, IBM's agentic coding assistant, throughout the development lifecycle — achieving a significant productivity multiplier and demonstrating strong fluency with AI-powered engineering tools.",
+				"Leveraged <strong>AI-assisted coding tools</strong> to improve development efficiency and accelerate feature delivery across the product lifecycle.",
 				"Drove front-end engineering quality through end-to-end test coverage, observability pipeline setup, and performance profiling of critical UI and API paths."
 			]
 		},
