@@ -4,8 +4,9 @@
 		"label": "Senior Software Engineer",
 		"email": "princepaulose1996@gmail.com",
 		"phone": "+91 7591944220",
-		"location": "Kerala, India",
+		"location": "Kerala",
 		"profiles": {
+			"website": "https://princepaulose.netlify.app",
 			"linkedin": "https://www.linkedin.com/in/princepaulose1996/",
 			"github": "https://github.com/princepaulose46"
 		},
@@ -17,7 +18,7 @@
 			"position": "Senior Software Engineer",
 			"startDate": "May 2024",
 			"endDate": "Present",
-			"location": "Kochi, India",
+			"location": "Kochi",
 			"highlights": [
 				"Led front-end delivery of <strong>IBM Data Product Hub</strong> — an enterprise marketplace for data product discovery, governance, and lifecycle management — enabling business units across IBM to publish, share, and consume trusted data at scale.",
 				"Implemented the data product <strong>authoring and publication flows</strong>, supporting a full lifecycle from Draft through Authoring to Published and Retired states, with version control and collaborator access management using role-based permissions (Admin, Editor, Viewer).",
@@ -33,7 +34,7 @@
 			"position": "Lead Software Engineer",
 			"startDate": "Mar 2023",
 			"endDate": "Apr 2024",
-			"location": "Bengaluru, India",
+			"location": "Bengaluru",
 			"highlights": [
 				"Led a cross-functional team of <strong>5 engineers</strong> delivering a large-scale incident and operations management platform used by distributed teams across multiple regions.",
 				"Designed and owned a <strong>Backend-for-Frontend layer (Node.js + GraphQL)</strong> that unified data access for React clients, reducing frontend API calls by ~30–40% and improving response times.",
@@ -48,7 +49,7 @@
 			"position": "Senior Software Engineer",
 			"startDate": "Feb 2019",
 			"endDate": "Feb 2023",
-			"location": "Kerala, India",
+			"location": "Kochi",
 			"highlights": [
 				"Architected a low-latency <strong>Interactive Event Management Platform</strong> using <strong>WebRTC and Socket.io</strong>, supporting <strong>10,000+ concurrent users</strong> with real-time video, messaging, and event coordination.",
 				"Built a modular <strong>Course Creation engine</strong> with a drag-and-drop React interface, enabling rich content authoring for a global education platform operating across <strong>30+ countries</strong>.",
@@ -63,7 +64,7 @@
 			"position": "Python Developer Intern",
 			"startDate": "Aug 2018",
 			"endDate": "Jan 2019",
-			"location": "Kochi, India",
+			"location": "Kochi",
 			"highlights": [
 				"Developed a fully functional <strong>e-commerce clone</strong> application using <strong>Django and MongoDB</strong>, implementing product listings, cart management, order processing, and user authentication.",
 				"Contributed to REST API development and database schema design under senior engineer supervision."
