@@ -20,12 +20,12 @@
 			"endDate": "Present",
 			"location": "Kochi, India",
 			"highlights": [
-				"Led front-end delivery of IBM Data Product Hub — an enterprise marketplace for data product discovery, governance, and lifecycle management — enabling business units across IBM to publish, share, and consume trusted data at scale.",
-				"Implemented the data product authoring and publication flows, supporting a full lifecycle from Draft through Authoring to Published and Retired states, with version control and collaborator access management using role-based permissions (Admin, Editor, Viewer).",
-				"Built the data consumer subscription experience — including product discovery, search and filtering by business domain, subscription requests, business justification capture, and custom approval workflow integration.",
-				"Engineered multi-modal data delivery capabilities on the consumer side, supporting Apache Arrow Flight over gRPC for high-performance live data streaming, direct downloads, URL-based access, and data extract delivery to target connections.",
-				"Contributed to data governance features including data contracts with Terms & Conditions and SLA enforcement, business domain organisation, and metadata enrichment pipelines that enabled producers to surface rich technical and business context for each asset.",
-				"Leveraged Bob, IBM's agentic coding assistant, throughout the development lifecycle — achieving a significant productivity multiplier and demonstrating strong fluency with AI-powered engineering tools.",
+				"Led front-end delivery of <strong>IBM Data Product Hub</strong> — an enterprise marketplace for data product discovery, governance, and lifecycle management — enabling business units across IBM to publish, share, and consume trusted data at scale.",
+				"Implemented the data product <strong>authoring and publication flows</strong>, supporting a full lifecycle from Draft through Authoring to Published and Retired states, with version control and collaborator access management using role-based permissions (Admin, Editor, Viewer).",
+				"Built the data consumer <strong>subscription experience</strong> — including product discovery, search and filtering by business domain, subscription requests, business justification capture, and custom approval workflow integration.",
+				"Engineered multi-modal data delivery capabilities on the consumer side, supporting <strong>Apache Arrow Flight over gRPC</strong> for high-performance live data streaming, direct downloads, URL-based access, and data extract delivery to target connections including <strong>watsonx.data</strong> and Azure Databricks.",
+				"Contributed to data governance features including <strong>data contracts</strong> with Terms & Conditions and SLA enforcement, business domain organisation, and metadata enrichment pipelines that enabled producers to surface rich technical and business context for each asset.",
+				"Leveraged <strong>Bob</strong>, IBM's agentic coding assistant, throughout the development lifecycle — achieving a significant productivity multiplier and demonstrating strong fluency with AI-powered engineering tools.",
 				"Drove front-end engineering quality through end-to-end test coverage, observability pipeline setup, and performance profiling of critical UI and API paths."
 			]
 		},
@@ -36,12 +36,12 @@
 			"endDate": "Apr 2024",
 			"location": "Bengaluru, India",
 			"highlights": [
-				"Led a cross-functional team of 5 engineers delivering a large-scale incident and operations management platform used by distributed teams across multiple regions.",
-				"Designed and owned a Backend-for-Frontend layer (Node.js + GraphQL) that unified data access for React clients, eliminating redundant API calls and significantly reducing frontend complexity.",
+				"Led a cross-functional team of <strong>5 engineers</strong> delivering a large-scale incident and operations management platform used by distributed teams across multiple regions.",
+				"Designed and owned a <strong>Backend-for-Frontend layer (Node.js + GraphQL)</strong> that unified data access for React clients, eliminating redundant API calls and significantly reducing frontend complexity.",
 				"Built shared component libraries and internal abstractions that reduced average feature development time and improved code consistency across engineering teams.",
 				"Integrated a customer onboarding in-app interactive flow that familiarised users with all platform features, improving activation rates and reducing support queries.",
-				"Leveraged AWS services including Lambda, EC2, S3, and IAM roles to support backend infrastructure, and integrated email and SMS notification services for operational alerting.",
-				"Recipient of the GEM (Going the Extra Mile) Award — recognised for outstanding architectural ownership and on-time delivery excellence."
+				"Leveraged AWS services including <strong>Lambda, EC2, S3, and IAM roles</strong> to support backend infrastructure, and integrated <strong>email and SMS notification services</strong> for operational alerting.",
+				"Recipient of the <strong>GEM (Going the Extra Mile) Award</strong> — recognised for outstanding architectural ownership and on-time delivery excellence."
 			]
 		},
 		{
@@ -51,11 +51,11 @@
 			"endDate": "Feb 2023",
 			"location": "Kerala, India",
 			"highlights": [
-				"Architected a low-latency Interactive Event Management Platform using WebRTC and Socket.io, supporting 10,000+ concurrent users with real-time video, messaging, and event coordination.",
-				"Built a modular Course Creation engine with a drag-and-drop React interface, enabling rich content authoring for a global education platform operating across 30+ countries.",
-				"Designed real-time IoT Analytics Dashboards processing 5,000+ events per second using React visualisation components and WebSocket-based data streaming pipelines.",
-				"Developed a React Native mobile application from scratch for the IoT monitoring platform, delivering full feature parity with the web product on iOS and Android.",
-				"Built backend services and RESTful APIs using Python and Django, supporting data ingestion pipelines and internal admin tooling used by operations teams.",
+				"Architected a low-latency <strong>Interactive Event Management Platform</strong> using <strong>WebRTC and Socket.io</strong>, supporting <strong>10,000+ concurrent users</strong> with real-time video, messaging, and event coordination.",
+				"Built a modular <strong>Course Creation engine</strong> with a drag-and-drop React interface, enabling rich content authoring for a global education platform operating across <strong>30+ countries</strong>.",
+				"Designed real-time <strong>IoT Analytics Dashboards</strong> processing <strong>5,000+ events per second</strong> using React visualisation components and WebSocket-based data streaming pipelines.",
+				"Developed a <strong>React Native</strong> mobile application from scratch for the IoT monitoring platform, delivering full feature parity with the web product on iOS and Android.",
+				"Built backend services and RESTful APIs using <strong>Python and Django</strong>, supporting data ingestion pipelines and internal admin tooling used by operations teams.",
 				"Mentored a team of junior engineers and established full-stack best practices — covering code review standards, component architecture, and CI/CD workflows."
 			]
 		},
@@ -66,7 +66,7 @@
 			"endDate": "Jan 2019",
 			"location": "Kochi, India",
 			"highlights": [
-				"Developed a fully functional e-commerce clone application using Django and MongoDB, implementing product listings, cart management, order processing, and user authentication.",
+				"Developed a fully functional <strong>e-commerce clone</strong> application using <strong>Django and MongoDB</strong>, implementing product listings, cart management, order processing, and user authentication.",
 				"Contributed to REST API development and database schema design under senior engineer supervision."
 			]
 		}

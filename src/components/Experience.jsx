@@ -60,7 +60,7 @@ const Experience = () => {
                                                 viewport={{ once: true }}
                                                 transition={{ delay: idx * 0.1 }}
                                             >
-                                                {highlight}
+                                                <span dangerouslySetInnerHTML={{ __html: highlight }} />
                                             </motion.li>
                                         ))}
                                     </ul>
