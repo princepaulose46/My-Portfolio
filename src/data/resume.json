@@ -9,8 +9,8 @@
 			"linkedin": "https://www.linkedin.com/in/princepaulose1996/",
 			"github": "https://github.com/princepaulose46"
 		},
-		"yearsOfExperience": 7,
-		"summary": "Senior Software Engineer with around 8 years of experience building scalable product platforms using React, TypeScript, and Node.js. Strong background in product-driven engineering, developer experience, and system design. Proven ability to own complex systems end-to-end, mentor engineers, and ship reliable software at scale. Recently focused on AI agent systems for engineering productivity, combining LLMs with real-world workflows."
+		"yearsOfExperience": 8,
+		"summary": "Senior Software Engineer with 8 years of experience building scalable web applications using React, TypeScript, Node.js, and MongoDB. Experienced in delivering full-stack MERN solutions across enterprise and product environments, from database design and REST/GraphQL API development to performant frontend delivery. Strong background in leading engineering teams, establishing technical standards, and shipping reliable software at scale. Additional hands-on experience building backend services with Python and Django."
 	},
 	"experience": [
 		{
@@ -18,12 +18,15 @@
 			"position": "Senior Software Engineer",
 			"startDate": "May 2024",
 			"endDate": "Present",
+			"location": "Kochi, India",
 			"highlights": [
-				"Lead the implementation of Data Product Hub, a next-generation platform for enterprise-wide discovery, governance, and reuse of data products.",
-				"Architected scalable self-serve workflows and API-first delivery mechanisms using Node.js to streamline data product publication and consumption.",
-				"Built metadata indexing and search features that significantly reduced data lookup times by enabling discovery through domain tags and usage context.",
-				"Integrated data contract enforcement and lifecycle policies to ensure strict security and compliance standards across all curated data assets.",
-				"Standardized engineering excellence through comprehensive testing strategies (E2E), observability pipelines, and performance profiling."
+				"Led front-end delivery of IBM Data Product Hub — an enterprise marketplace for data product discovery, governance, and lifecycle management — enabling business units across IBM to publish, share, and consume trusted data at scale.",
+				"Implemented the data product authoring and publication flows, supporting a full lifecycle from Draft through Authoring to Published and Retired states, with version control and collaborator access management using role-based permissions (Admin, Editor, Viewer).",
+				"Built the data consumer subscription experience — including product discovery, search and filtering by business domain, subscription requests, business justification capture, and custom approval workflow integration.",
+				"Engineered multi-modal data delivery capabilities on the consumer side, supporting Apache Arrow Flight over gRPC for high-performance live data streaming, direct downloads, URL-based access, and data extract delivery to target connections.",
+				"Contributed to data governance features including data contracts with Terms & Conditions and SLA enforcement, business domain organisation, and metadata enrichment pipelines that enabled producers to surface rich technical and business context for each asset.",
+				"Leveraged Bob, IBM's agentic coding assistant, throughout the development lifecycle — achieving a significant productivity multiplier and demonstrating strong fluency with AI-powered engineering tools.",
+				"Drove front-end engineering quality through end-to-end test coverage, observability pipeline setup, and performance profiling of critical UI and API paths."
 			]
 		},
 		{
@@ -31,12 +34,14 @@
 			"position": "Lead Software Engineer",
 			"startDate": "Mar 2023",
 			"endDate": "Apr 2024",
+			"location": "Bengaluru, India",
 			"highlights": [
-				"Led development of a large-scale incident and operations management platform used by distributed teams across regions.",
-				"Designed and owned a Backend-for-Frontend (Node.js + GraphQL) that simplified data access for React clients and reduced frontend complexity.",
-				"Built internal tooling and abstractions that reduced feature development time and improved code consistency across teams.",
-				"Served as technical lead for a team of 5 engineers, balancing delivery, code quality, and long-term maintainability.",
-				"Designed and built an in-app interactive tour for an existing Vue.js application to improve user onboarding."
+				"Led a cross-functional team of 5 engineers delivering a large-scale incident and operations management platform used by distributed teams across multiple regions.",
+				"Designed and owned a Backend-for-Frontend layer (Node.js + GraphQL) that unified data access for React clients, eliminating redundant API calls and significantly reducing frontend complexity.",
+				"Built shared component libraries and internal abstractions that reduced average feature development time and improved code consistency across engineering teams.",
+				"Integrated a customer onboarding in-app interactive flow that familiarised users with all platform features, improving activation rates and reducing support queries.",
+				"Leveraged AWS services including Lambda, EC2, S3, and IAM roles to support backend infrastructure, and integrated email and SMS notification services for operational alerting.",
+				"Recipient of the GEM (Going the Extra Mile) Award — recognised for outstanding architectural ownership and on-time delivery excellence."
 			]
 		},
 		{
@@ -44,76 +49,84 @@
 			"position": "Senior Software Engineer",
 			"startDate": "Feb 2019",
 			"endDate": "Feb 2023",
+			"location": "Kerala, India",
 			"highlights": [
-				"Architected a low-latency Interactive Event Management Platform utilizing WebRTC and Socket.io, supporting 10k+ concurrent users.",
-				"Built a modular Course Creation engine with a drag-and-drop React architecture, enabling rich content authoring for a global education platform.",
-				"Designed real-time IoT Analytics Dashboards processing 5k+ events/sec, focusing on high-performance React visualization and data streaming.",
-				"Mentored engineering teams and established standardized full-stack best practices, focusing on frontend-first architectural thinking.",
-				"Developed a high-performance React Native application from scratch for the same IoT project to enable mobile monitoring."
+				"Architected a low-latency Interactive Event Management Platform using WebRTC and Socket.io, supporting 10,000+ concurrent users with real-time video, messaging, and event coordination.",
+				"Built a modular Course Creation engine with a drag-and-drop React interface, enabling rich content authoring for a global education platform operating across 30+ countries.",
+				"Designed real-time IoT Analytics Dashboards processing 5,000+ events per second using React visualisation components and WebSocket-based data streaming pipelines.",
+				"Developed a React Native mobile application from scratch for the IoT monitoring platform, delivering full feature parity with the web product on iOS and Android.",
+				"Built backend services and RESTful APIs using Python and Django, supporting data ingestion pipelines and internal admin tooling used by operations teams.",
+				"Mentored a team of junior engineers and established full-stack best practices — covering code review standards, component architecture, and CI/CD workflows."
 			]
 		},
 		{
-			"company": "IPSR solutions ltd, Kochi (Internship)",
-			"position": "Python Developer Intern (Django)",
+			"company": "IPSR Solutions Ltd",
+			"position": "Python Developer Intern",
 			"startDate": "Aug 2018",
 			"endDate": "Jan 2019",
+			"location": "Kochi, India",
 			"highlights": [
-				"Built backend architectures and full-stack features using Python and Django."
+				"Developed a fully functional e-commerce clone application using Django and MongoDB, implementing product listings, cart management, order processing, and user authentication.",
+				"Contributed to REST API development and database schema design under senior engineer supervision."
 			]
 		}
 	],
 	"projects": [
 		{
-			"name": "Smart Expense Tracker Platform",
-			"description": "Enterprise-grade financial ecosystem demonstrating decoupled microservices and a high-performance React frontend.",
+			"name": "Smart Expense Tracker",
+			"description": "Full-stack financial management platform built on decoupled microservices with a React/Redux frontend. Features JWT-based authentication, event-driven data consistency, and normalised Redux Toolkit caching for high-performance UI rendering.",
 			"technologies": [
 				"React",
 				"Redux Toolkit",
-				"Java",
-				"Spring Boot",
+				"Node.js",
+				"MongoDB",
 				"Docker"
 			],
 			"link": "https://github.com/princepaulose46/Smart-Expense-Tracker",
 			"details": {
-				"features": [
-					"Micro-service architecture with decoupled Auth and Core services.",
-					"Advanced state management with normalized caching for responsiveness.",
-					"Secure JWT-based authentication with refresh token rotation."
-				]
+				"features": []
 			}
 		}
 	],
 	"skills": {
-		"Product Engineering": [
+		"Frontend": [
 			"React",
 			"TypeScript",
-			"Node.js",
 			"Next.js",
+			"Redux Toolkit",
 			"Micro Frontends",
-			"REST & GraphQL",
-			"Performance Optimization",
-			"HTML/CSS"
+			"Vue.js",
+			"HTML/CSS",
+			"Puppeteer"
 		],
-		"System Design & Backend": [
-			"Microservices",
-			"API Design",
-			"Event-Driven Systems",
-			"SQL & NoSQL",
-			"Caching",
-			"Async Processing"
+		"Backend": [
+			"Node.js",
+			"Express.js",
+			"Python",
+			"Django",
+			"REST APIs",
+			"GraphQL",
+			"BFF Pattern",
+			"WebRTC",
+			"Socket.io",
+			"Kafka",
+			"RabbitMQ"
 		],
-		"AI & Applied ML": [
-			"LLM Integration",
-			"AI Agents",
-			"Tool-Calling",
-			"Vector Search"
+		"Databases": [
+			"MongoDB",
+			"MySQL",
+			"Redis",
+			"NoSQL design patterns",
+			"event-driven architecture"
 		],
-		"Cloud & Engineering Standards": [
+		"Infrastructure": [
 			"AWS (Lambda, EC2, S3)",
 			"Docker",
 			"Jenkins",
-			"Testing (Jest, RTL, E2E)",
-			"Code Reviews"
+			"CI/CD pipelines",
+			"Jest",
+			"React Testing Library",
+			"E2E testing"
 		]
 	},
 	"education": [
@@ -130,12 +143,12 @@
 			"title": "GEM Award",
 			"date": "2024",
 			"awarder": "Capgemini",
-			"summary": "Recognized for exceptional architectural ownership and delivery excellence."
+			"summary": "Recipient of the GEM (Going the Extra Mile) Award — recognised for outstanding architectural ownership and on-time delivery excellence."
 		}
 	],
 	"languages": [
-		"English (Proficient)",
-		"Malayalam (Native)",
-		"Hindi (Professional)"
+		"English",
+		"Malayalam",
+		"Hindi"
 	]
 }
