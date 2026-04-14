@@ -10,7 +10,7 @@
 			"linkedin": "https://www.linkedin.com/in/princepaulose1996/",
 			"github": "https://github.com/princepaulose46"
 		},
-		"summary": "Senior Software Engineer with over 7 years of experience building scalable web applications and distributed systems using React, Node.js, and cloud technologies. Recently exploring AI-assisted development and LLM-based workflows to enhance engineering productivity. Additional hands-on experience building backend services with Python and Django."
+		"summary": "Senior Software Engineer with 7+ years of experience. I build end-to-end products — React on the front, Node.js and AWS on the back, with a strong eye for system design and scalable architecture. I've led cross-functional engineering teams, mentored junior developers, and shipped products used by thousands. I write clean, production-grade code and take full ownership of what I build."
 	},
 	"experience": [
 		{
@@ -20,13 +20,11 @@
 			"endDate": "Present",
 			"location": "Kochi",
 			"highlights": [
-				"Led front-end delivery of <strong>IBM Data Product Hub</strong> — an enterprise marketplace for data product discovery, governance, and lifecycle management — enabling business units across IBM to publish, share, and consume trusted data at scale.",
-				"Implemented the data product <strong>authoring and publication flows</strong>, supporting a full lifecycle from Draft through Authoring to Published and Retired states, with version control and collaborator access management using role-based permissions (Admin, Editor, Viewer).",
-				"Built end-to-end data consumer <strong>subscription workflows</strong> including discovery, filtering, approval flows, and access management, improving data discovery efficiency across business units.",
-				"Engineered multi-modal data delivery capabilities on the consumer side, supporting <strong>Apache Arrow Flight over gRPC</strong> for high-performance live data streaming, direct downloads, URL-based access, and data extract delivery to target connections including <strong>watsonx.data</strong> and Azure Databricks.",
-				"Contributed to data governance features including <strong>data contracts</strong> with Terms & Conditions and SLA enforcement, business domain organisation, and metadata enrichment pipelines that enabled producers to surface rich technical and business context for each asset.",
-				"Leveraged <strong>AI-assisted coding tools</strong> to improve development efficiency, delivering high quality robust code and accelerate feature delivery across the product lifecycle.",
-				"Drove front-end engineering quality through end-to-end test coverage, observability pipeline setup, and performance profiling of critical UI and API paths."
+				"Led front-end delivery of an enterprise data marketplace platform used across a global organisation to publish, discover, and govern data at scale.",
+				"Built the full data product lifecycle UI in React + TypeScript — covering authoring, publication, version control, and role-based access management.",
+				"Delivered end-to-end consumer subscription flows including search, filtering, approval workflows, and access provisioning.",
+				"Engineered multi-modal data delivery features supporting high-performance live streaming, direct downloads, and delivery to external analytics platforms.",
+				"Drove frontend quality through comprehensive E2E test coverage, observability pipeline setup, and performance profiling."
 			]
 		},
 		{
@@ -36,12 +34,11 @@
 			"endDate": "Apr 2024",
 			"location": "Bengaluru",
 			"highlights": [
-				"Led a cross-functional team of <strong>5 engineers</strong> delivering a large-scale incident and operations management platform used by distributed teams across multiple regions.",
-				"Designed and owned a <strong>Backend-for-Frontend layer (Node.js + GraphQL)</strong> that unified data access for React clients, reducing frontend API calls by ~30–40% and improving response times.",
-				"Built shared component libraries and internal abstractions that reduced average feature development time and improved code consistency across engineering teams.",
-				"Integrated a customer onboarding in-app interactive flow that familiarised users with all platform features, improving activation rates and reducing support queries.",
-				"Leveraged <strong>AWS</strong> services to support backend infrastructure, and integrated <strong>email and SMS notification services</strong> for operational alerting.",
-				"Recipient of the <strong>GEM (Going the Extra Mile) Award</strong> — recognised for outstanding architectural ownership and on-time delivery excellence."
+				"Led a 5-engineer team delivering a large-scale incident and operations management platform across multiple regions.",
+				"Designed a Node.js + GraphQL Backend-for-Frontend (BFF) layer that reduced frontend API calls by ~30–40% and improved response times.",
+				"Built a shared React component library that cut feature development time and improved cross-team code consistency.",
+				"Integrated an in-app onboarding flow that improved user activation rates and reduced support queries.",
+				"Received the GEM Award for outstanding architectural ownership and on-time delivery."
 			]
 		},
 		{
@@ -51,12 +48,11 @@
 			"endDate": "Feb 2023",
 			"location": "Kochi",
 			"highlights": [
-				"Architected a low-latency <strong>Interactive Event Management Platform</strong> using <strong>WebRTC and Socket.io</strong>, supporting <strong>10,000+ concurrent users</strong> with real-time video, messaging, and event coordination.",
-				"Built a modular <strong>Course Creation engine</strong> with a drag-and-drop React interface, enabling rich content authoring for a global education platform operating across <strong>30+ countries</strong>.",
-				"Designed real-time <strong>IoT Analytics Dashboards</strong> processing <strong>5,000+ events per second</strong> using React visualisation components and WebSocket-based data streaming pipelines.",
-				"Developed a <strong>React Native</strong> mobile application from scratch for the IoT monitoring platform, delivering full feature parity with the web product on iOS and Android.",
-				"Built backend services and RESTful APIs using <strong>Python and Django</strong>, supporting data ingestion pipelines and internal admin tooling used by operations teams.",
-				"Mentored a team of junior engineers and established full-stack best practices — covering code review standards, component architecture, and CI/CD workflows."
+				"Architected a low-latency event platform with WebRTC + Socket.io supporting 10,000+ concurrent users with real-time video and messaging.",
+				"Built a drag-and-drop course creation engine in React for a global education platform across 30+ countries.",
+				"Designed IoT analytics dashboards processing 5,000+ events/sec using React and WebSocket-based data streaming.",
+				"Developed a React Native mobile app for an IoT monitoring platform, achieving full feature parity on iOS and Android.",
+				"Mentored junior engineers and established full-stack best practices across code reviews, architecture, and CI/CD workflows."
 			]
 		},
 		{
@@ -66,15 +62,15 @@
 			"endDate": "Jan 2019",
 			"location": "Kochi",
 			"highlights": [
-				"Developed a fully functional <strong>e-commerce clone</strong> application using <strong>Django and MongoDB</strong>, implementing product listings, cart management, order processing, and user authentication.",
-				"Contributed to REST API development and database schema design under senior engineer supervision."
+				"Built a full-featured e-commerce application using Django and MongoDB covering cart, orders, and authentication.",
+				"Contributed to REST API development and database schema design under senior mentorship."
 			]
 		}
 	],
 	"projects": [
 		{
 			"name": "Smart Expense Tracker",
-			"description": "Full-stack financial management platform built on decoupled microservices with a React/Redux frontend. Features JWT-based authentication, event-driven data consistency, and normalised Redux Toolkit caching for high-performance UI rendering.",
+			"description": "Full-stack financial management platform on a decoupled microservices architecture. Features JWT-based auth, event-driven data consistency, and normalised Redux Toolkit caching for high-performance UI rendering.",
 			"technologies": [
 				"React",
 				"Redux Toolkit",
@@ -89,50 +85,42 @@
 		}
 	],
 	"skills": {
-		"Frontend": [
+		"FRONTEND": [
 			"React",
 			"TypeScript",
 			"Next.js",
 			"Redux Toolkit",
+			"React Native",
 			"Micro Frontends",
-			"Web Accessibility",
-			"HTML/CSS",
-			"Puppeteer"
+			"Web Accessibility (WCAG)",
+			"HTML/CSS"
 		],
-		"Backend": [
+		"BACKEND": [
 			"Node.js",
 			"Express.js",
+			"GraphQL",
+			"REST APIs",
 			"Python",
 			"Django",
-			"REST APIs",
-			"GraphQL",
-			"BFF Pattern",
 			"WebRTC",
 			"Socket.io",
-			"Kafka",
-			"RabbitMQ"
+			"Kafka"
 		],
-		"Databases": [
-			"MongoDB",
-			"MySQL",
-			"Redis",
-			"NoSQL design patterns",
-			"event-driven architecture"
-		],
-		"Infrastructure": [
+		"DATABASES": ["MongoDB", "MySQL", "Redis"],
+		"INFRA": [
 			"AWS",
 			"Docker",
 			"Jenkins",
-			"CI/CD pipelines",
+			"CI/CD",
 			"Jest",
-			"React Testing Library",
-			"E2E testing"
-		]
+			"React Testing Library"
+		],
+		"AI & AGENTS": ["LLM-assisted development", "Agentic coding workflows"]
 	},
 	"education": [
 		{
 			"institution": "University of Calicut",
-			"area": "Computer Science and Engineering",
+			"area": "Computer Science & Engineering",
 			"studyType": "B.Tech",
 			"startDate": "2014",
 			"endDate": "2018"
@@ -141,14 +129,9 @@
 	"awards": [
 		{
 			"title": "GEM Award",
-			"date": "2024",
 			"awarder": "Capgemini",
-			"summary": "Recipient of the GEM (Going the Extra Mile) Award — recognised for outstanding architectural ownership and on-time delivery excellence."
+			"summary": "Going the Extra Mile — awarded at Capgemini for architectural ownership and delivery excellence."
 		}
 	],
-	"languages": [
-		"English",
-		"Malayalam",
-		"Hindi"
-	]
+	"languages": ["English", "Malayalam", "Hindi"]
 }

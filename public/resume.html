@@ -6,10 +6,12 @@
 		<title>Prince Paulose - Resume</title>
 		<style>
 			:root {
-				--primary: #184c96; /* Matching the deep blue from the screenshot */
-				--text: #1a1a1a;
-				--gray: #666666;
-				--border: #cccccc;
+				--bg-dark: #242936;
+				--primary: #1952a1;
+				--text: #333333;
+				--gray-light: #777777;
+				--gray-dark: #838d9c;
+				--border-color: #e5e7eb;
 			}
 
 			* {
@@ -20,252 +22,542 @@
 
 			@page {
 				size: A4;
-				margin: 10mm;
+				margin: 0;
 			}
 
 			body {
-				font-family: Arial, sans-serif;
-				line-height: 1.35;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				line-height: 1.4;
 				color: var(--text);
-				background: white;
-				font-size: 10pt;
+				background: #f5f5f5;
+				font-size: 12pt;
 				-webkit-font-smoothing: antialiased;
 			}
 
 			.page {
 				width: 210mm;
 				min-height: 297mm;
-				padding: 15mm;
-				margin: 0 auto;
+				margin: 20px auto;
 				background: white;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+				position: relative;
 			}
 
 			@media print {
-				body { background: white; margin: 0; padding: 0; }
-				.page { margin: 0; padding: 0; width: auto; min-height: auto; box-shadow: none; }
-				.no-print { display: none !important; }
+				body {
+					background: white;
+					margin: 0;
+				}
+				.page {
+					margin: 0;
+					box-shadow: none;
+					width: 100%;
+					min-height: 100vh;
+				}
+				.no-print {
+					display: none !important;
+				}
+				.next-page {
+					page-break-before: always;
+					padding-top: 40px;
+				}
+			}
+
+			.skills-container {
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				max-width: 600px;
+				padding: 20px;
+			}
+
+			.skills-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				list-style: none;
+				padding: 0;
+			}
+
+			.skill-tag {
+				/* The "Light Blue Square" base */
+				background-color: #e3f2fd;
+				color: #1565c0;
+				padding: 8px 14px;
+				border-radius: 4px; /* Slight roundness for a modern square look */
+				font-size: 14px;
+				font-weight: 600;
+				border: 1px solid #bbdefb;
+				transition: all 0.3s ease;
+				cursor: default;
+			}
+
+			/* Interaction: subtle lift effect */
+			.skill-tag:hover {
+				background-color: #bbdefb;
+				transform: translateY(-2px);
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 			}
 
 			.print-btn {
 				position: fixed;
-				top: 10px;
-				right: 10px;
-				background: var(--primary);
+				bottom: 20px;
+				right: 20px;
+				background: #242936;
 				color: white;
-				padding: 8px 16px;
+				padding: 12px 24px;
 				border-radius: 6px;
 				font-weight: bold;
 				cursor: pointer;
 				z-index: 1000;
 				border: none;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 			}
 
-			h1 {
+			/* --- Header --- */
+			.header {
+				background-color: var(--bg-dark);
+				color: white;
+				padding: 35px 40px;
+			}
+
+			.header h1 {
 				font-size: 28pt;
-				color: #1a1a1a;
-				font-weight: 800;
-				margin-bottom: 2px;
-				letter-spacing: -0.5px;
+				font-weight: 700;
+				margin-bottom: 6px;
+				letter-spacing: 0.5px;
 			}
 
-			.job-title {
-				font-size: 14pt;
-				color: var(--primary);
-				font-weight: bold;
-				margin-bottom: 4px;
-				letter-spacing: -0.3px;
+			.header .job-title {
+				font-size: 11pt;
+				color: var(--gray-dark);
+				font-weight: 600;
+				margin-bottom: 12px;
+				letter-spacing: 0.5px;
 			}
 
-			.contact-info {
-				font-size: 10pt;
-				color: var(--gray);
-				margin-bottom: 20px;
+			.header .contact-info {
+				font-size: 9.5pt;
+				color: #c2c6d2;
 			}
 
-			.contact-info a {
+			.header .contact-info a {
 				color: inherit;
 				text-decoration: none;
 			}
 
+			/* --- Main Content --- */
+			.content {
+				padding: 30px 35px;
+			}
+
+			/* Section Headings */
 			h2 {
-				font-size: 11pt;
+				font-size: 12pt;
 				color: var(--primary);
-				margin-bottom: 8px;
+				margin-bottom: 13px;
 				text-transform: uppercase;
-				font-weight: bold;
-				margin-top: 18px;
-				letter-spacing: 0px;
+				font-weight: 700;
+				letter-spacing: 0.5px;
 			}
 
+			.section-divider {
+				border-top: 1px solid var(--border-color);
+				margin: 18px 0;
+			}
+
+			/* Typography */
 			p {
-				margin-bottom: 8px;
-				text-align: left;
+				margin-bottom: 10px;
+				line-height: 1.5;
 			}
 
-			.competency-item {
-				margin-bottom: 4px;
+			ul {
+				list-style-type: disc;
+				padding-left: 18px;
+				margin-bottom: 10px;
 			}
 
-			.experience-item {
-				margin-bottom: 16px;
+			li {
+				margin-bottom: 5px;
+				line-height: 1.45;
+			}
+
+			strong {
+				font-weight: 600;
+				color: #1a1a1a;
+			}
+
+			/* Tech Stack */
+			.tech-grid {
+				display: grid;
+				grid-template-columns: 120px 1fr;
+				row-gap: 10px;
+				margin-bottom: 15px;
+				align-items: start;
+			}
+			.tech-category {
+				font-weight: 700;
+				font-size: 8.5pt;
+				color: #4a4a4a;
+				padding-top: 4px;
+			}
+			.tech-items {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.tech-tag {
+				background-color: #f0f2f5;
+				color: #333333;
+				padding: 4px 10px;
+				border-radius: 4px;
+				font-size: 8.5pt;
+				font-weight: 500;
+				border: 1px solid #d1d5db;
+			}
+
+			/* Experience */
+			.experience-block {
+				margin-bottom: 18px;
 			}
 
 			.exp-header {
 				display: flex;
 				justify-content: space-between;
 				align-items: baseline;
-				margin-bottom: 2px;
+				margin-bottom: 3px;
 			}
 
-			.company-name {
-				font-weight: bold;
-				font-size: 10.5pt;
+			.company-info {
+				font-weight: 700;
+				font-size: 13pt;
 				color: #1a1a1a;
 			}
 
 			.company-loc {
-				color: var(--gray);
-				font-weight: normal;
-				font-size: 9.5pt;
+				color: var(--gray-light);
+				font-weight: 400;
+				font-size: 10.5pt;
 			}
 
 			.exp-date {
-				color: var(--gray);
+				color: var(--gray-light);
 				font-size: 9.5pt;
-				white-space: nowrap;
+				font-style: italic;
 			}
 
 			.role-title {
-				font-weight: bold;
+				font-weight: 700;
 				color: var(--primary);
-				margin-bottom: 6px;
-				font-size: 10pt;
-			}
-            
-            .project-role-title {
-                margin-top: 2px;
-                margin-bottom: 4px;
-            }
-
-			ul {
-				list-style-type: disc;
-				padding-left: 18px;
-				margin-bottom: 0;
+				margin-bottom: 9px;
+				font-size: 10.5pt;
 			}
 
-			li {
+			/* Removed three-col-grid */
+
+			/* Projects */
+			.project-title {
+				font-weight: 700;
+				font-size: 9.5pt;
 				margin-bottom: 4px;
-				text-align: left;
-			}
-			
-			.education-item {
-				margin-bottom: 14px;
+				color: #1a1a1a;
 			}
 
+			.project-tech {
+				color: var(--gray-light);
+				font-weight: 400;
+			}
+
+			/* Recognition Block */
+			.recognition-block {
+				background-color: #fffaf0;
+				border-left: 3px solid #f5cf66;
+				padding: 10px 12px;
+				margin-bottom: 10px;
+			}
+			.recognition-title {
+				font-weight: 700;
+				color: #b58105;
+				margin-bottom: 4px;
+				display: flex;
+				align-items: center;
+			}
+			.recognition-title svg {
+				width: 14px;
+				height: 14px;
+				margin-right: 6px;
+				fill: currentColor;
+			}
+
+			/* Education */
+			.edu-inst {
+				font-weight: 700;
+				color: #1a1a1a;
+				margin-bottom: 2px;
+			}
+			.edu-degree {
+				color: #333333;
+				margin-bottom: 2px;
+			}
+			.edu-date {
+				color: var(--gray-light);
+				font-style: italic;
+			}
+
+			/* Languages */
+			.lang-item {
+				margin-bottom: 2px;
+			}
+
+			/* Bottom Layout */
+			.bottom-sections {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 20px;
+			}
 		</style>
 	</head>
 	<body>
 		<button class="print-btn no-print" onclick="window.print()">
 			Save PDF
 		</button>
+
 		<div class="page">
-			<h1>Prince Paulose</h1>
-			<div class="job-title">Senior Software Engineer</div>
-			<div class="contact-info">
-				princepaulose1996@gmail.com | +91 7591944220 | <a style="text-decoration: none; color: inherit;" href="https://princepaulose.netlify.app">princepaulose.netlify.app</a>
-			</div>
-
-			<h2>PROFESSIONAL SUMMARY</h2>
-			<p>Senior Software Engineer with over 7 years of experience building scalable web applications and distributed systems using React, Node.js, and cloud technologies. Recently exploring AI-assisted development and LLM-based workflows to enhance engineering productivity. Additional hands-on experience building backend services with Python and Django.</p>
-
-			<h2>CORE COMPETENCIES</h2>
-			<div style="margin-bottom: 16px;">
-				<div class="competency-item"><strong>Frontend:</strong> React, TypeScript, Next.js, Redux Toolkit, Micro Frontends, Web Accessibility, HTML/CSS, Puppeteer</div>
-				<div class="competency-item"><strong>Backend:</strong> Node.js, Express.js, Python, Django, REST APIs, GraphQL, BFF Pattern, WebRTC, Socket.io, Kafka, RabbitMQ</div>
-				<div class="competency-item"><strong>Databases:</strong> MongoDB, MySQL, Redis, NoSQL design patterns, event-driven architecture</div>
-				<div class="competency-item"><strong>Infrastructure:</strong> AWS, Docker, Jenkins, CI/CD pipelines, Jest, React Testing Library, E2E testing</div>
-			</div>
-
-			<h2>PROFESSIONAL EXPERIENCE</h2>
-			
-			<div class="experience-item">
-				<div class="exp-header">
-					<div class="company-name">IBM Software Labs <span class="company-loc">· Kochi</span></div>
-					<div class="exp-date">May 2024 – Present</div>
+			<!-- Header -->
+			<div class="header">
+				<h1>Prince Paulose</h1>
+				<div class="job-title">Senior Software Engineer</div>
+				<div class="contact-info">
+					princepaulose1996@gmail.com &nbsp;|&nbsp; +91 7591944220 &nbsp;|&nbsp;
+					<a href="https://princepaulose.netlify.app"
+						>princepaulose.netlify.app</a
+					>
 				</div>
-				<div class="role-title">Senior Software Engineer</div>
-				<ul>
-					<li>Led front-end delivery of <strong>IBM Data Product Hub</strong> — an enterprise marketplace for data product discovery, governance, and lifecycle management — enabling business units across IBM to publish, share, and consume trusted data at scale.</li>
-					<li>Implemented the data product <strong>authoring and publication flows</strong>, supporting a full lifecycle from Draft through Authoring to Published and Retired states, with version control and collaborator access management using role-based permissions (Admin, Editor, Viewer).</li>
-					<li>Built end-to-end data consumer <strong>subscription workflows</strong> including discovery, filtering, approval flows, and access management, improving data discovery efficiency across business units.</li>
-					<li>Engineered multi-modal data delivery capabilities, supporting <strong>Apache Arrow Flight over gRPC</strong> for high-performance live data streaming, direct downloads, URL-based access, and data extract delivery to target connections including <strong>watsonx.data</strong> and Azure Databricks.</li>
-					<li>Contributed to data governance features including <strong>data contracts</strong> with Terms &amp; Conditions and SLA enforcement, business domain organisation, and metadata enrichment pipelines that enabled producers to surface rich technical and business context for each asset.</li>
-					<li>Leveraged <strong>AI-assisted coding tools</strong> to improve development efficiency, delivering high quality robust code and accelerate feature delivery across the product lifecycle.</li>
-					<li>Drove front-end engineering quality through end-to-end test coverage, observability pipeline setup, and performance profiling of critical UI and API paths.</li>
-				</ul>
 			</div>
 
-			<div class="experience-item">
-				<div class="exp-header">
-					<div class="company-name">Capgemini <span class="company-loc">· Bengaluru</span></div>
-					<div class="exp-date">Mar 2023 – Apr 2024</div>
+			<!-- Content -->
+			<div class="content">
+				<!-- SUMMARY -->
+				<h2>Summary</h2>
+				<p>
+					Senior Software Engineer with 7+ years of experience. I build
+					end-to-end products — React on the front, Node.js and AWS on the back,
+					with a strong eye for system design and scalable architecture. I've
+					led cross-functional engineering teams, mentored junior developers,
+					and shipped products used by thousands. I write clean,
+					production-grade code and take full ownership of what I build.
+				</p>
+
+				<div class="section-divider"></div>
+
+				<!-- TECH STACK -->
+				<h2>Tech Stack</h2>
+				<div class="tech-grid">
+					<div class="tech-category">FRONTEND</div>
+					<ul class="tech-items">
+						<li class="tech-tag">React</li>
+						<li class="tech-tag">TypeScript</li>
+						<li class="tech-tag">Next.js</li>
+						<li class="tech-tag">Redux Toolkit</li>
+						<li class="tech-tag">React Native</li>
+						<li class="tech-tag">Micro Frontends</li>
+						<li class="tech-tag">Web Accessibility (WCAG)</li>
+						<li class="tech-tag">HTML/CSS</li>
+					</ul>
+
+					<div class="tech-category">BACKEND</div>
+					<ul class="tech-items">
+						<li class="tech-tag">Node.js</li>
+						<li class="tech-tag">Express.js</li>
+						<li class="tech-tag">GraphQL</li>
+						<li class="tech-tag">REST APIs</li>
+						<li class="tech-tag">Python</li>
+						<li class="tech-tag">Django</li>
+						<li class="tech-tag">WebRTC</li>
+						<li class="tech-tag">Socket.io</li>
+						<li class="tech-tag">MongoDB</li>
+						<li class="tech-tag">MySQL</li>
+						<li class="tech-tag">Redis</li>
+					</ul>
+
+					<div class="tech-category">INFRA</div>
+					<ul class="tech-items">
+						<li class="tech-tag">AWS</li>
+						<li class="tech-tag">Docker</li>
+						<li class="tech-tag">Jenkins</li>
+						<li class="tech-tag">CI/CD</li>
+						<li class="tech-tag">Jest</li>
+						<li class="tech-tag">React Testing Library</li>
+					</ul>
+
+					<div class="tech-category">AI & AGENTS</div>
+					<ul class="tech-items">
+						<li class="tech-tag">LLM-assisted development</li>
+						<li class="tech-tag">Agentic coding workflows</li>
+					</ul>
 				</div>
-				<div class="role-title">Lead Software Engineer</div>
-				<ul>
-					<li>Led a cross-functional team of <strong>5 engineers</strong> delivering a large-scale incident and operations management platform used by distributed teams across multiple regions.</li>
-					<li>Designed and owned a <strong>Backend-for-Frontend layer (Node.js + GraphQL)</strong> that unified data access for React clients, reducing frontend API calls by ~30–40% and improving response times.</li>
-					<li>Built shared component libraries and internal abstractions that reduced average feature development time and improved code consistency across engineering teams.</li>
-					<li>Integrated a customer onboarding in-app interactive flow that familiarised users with all platform features, improving activation rates and reducing support queries.</li>
-					<li>Leveraged <strong>AWS</strong> services to support backend infrastructure, and integrated <strong>email and SMS notification services</strong> for operational alerting.</li>
-					<li>Recipient of the <strong>GEM (Going the Extra Mile) Award</strong> — recognised for outstanding architectural ownership and on-time delivery excellence.</li>
-				</ul>
-			</div>
 
-			<div class="experience-item">
-				<div class="exp-header">
-					<div class="company-name">Toobler Technologies <span class="company-loc">· Kochi</span></div>
-					<div class="exp-date">Feb 2019 – Feb 2023</div>
+				<div class="section-divider"></div>
+
+				<!-- EXPERIENCE -->
+				<h2>Experience</h2>
+
+				<div class="experience-block">
+					<div class="exp-header">
+						<div class="company-info">
+							IBM Software Labs <span class="company-loc">· Kochi</span>
+						</div>
+						<div class="exp-date">May 2024 – Present</div>
+					</div>
+					<div class="role-title">Senior Software Engineer</div>
+					<ul>
+						<li>
+							Led front-end delivery of an enterprise data marketplace platform
+							used across a global organisation to publish, discover, and govern
+							data at scale.
+						</li>
+						<li>
+							Built the full data product lifecycle UI in React + TypeScript —
+							covering authoring, publication, version control, and role-based
+							access management.
+						</li>
+						<li>
+							Delivered end-to-end consumer subscription flows including search,
+							filtering, approval workflows, and access provisioning.
+						</li>
+						<li>
+							Drove frontend quality through comprehensive E2E test coverage,
+							observability pipeline setup, and performance profiling.
+						</li>
+						<li>
+							Architected and scaled a Node.js GraphQL orchestration layer to
+							aggregate disparate microservices, reducing frontend network
+							overhead by 30% and enabling type-safe data fetching across the
+							marketplace.
+						</li>
+					</ul>
 				</div>
-				<div class="role-title">Senior Software Engineer</div>
-				<ul>
-					<li>Architected a low-latency <strong>Interactive Event Management Platform</strong> using <strong>WebRTC and Socket.io</strong>, supporting <strong>10,000+ concurrent users</strong> with real-time video, messaging, and event coordination.</li>
-					<li>Built a modular <strong>Course Creation engine</strong> with a drag-and-drop React interface, enabling rich content authoring for a global education platform operating across <strong>30+ countries</strong>.</li>
-					<li>Designed real-time <strong>IoT Analytics Dashboards</strong> processing <strong>5,000+ events per second</strong> using React visualisation components and WebSocket-based data streaming pipelines.</li>
-					<li>Developed a <strong>React Native</strong> mobile application from scratch for the IoT monitoring platform, delivering full feature parity with the web product on iOS and Android.</li>
-					<li>Built backend services and RESTful APIs using <strong>Python and Django</strong>, supporting data ingestion pipelines and internal admin tooling used by operations teams.</li>
-					<li>Mentored a team of junior engineers and established full-stack best practices — covering code review standards, component architecture, and CI/CD workflows.</li>
-				</ul>
-			</div>
 
-			<div class="experience-item">
-				<div class="exp-header">
-					<div class="company-name">IPSR Solutions Ltd <span class="company-loc">· Kochi</span></div>
-					<div class="exp-date">Aug 2018 – Jan 2019</div>
+				<div class="experience-block next-page">
+					<div class="exp-header">
+						<div class="company-info">
+							Capgemini <span class="company-loc">· Bengaluru</span>
+						</div>
+						<div class="exp-date">Mar 2023 – Apr 2024</div>
+					</div>
+					<div class="role-title">Lead Software Engineer</div>
+					<ul>
+						<li>
+							Led a 5-engineer team delivering a large-scale incident and
+							operations management platform across multiple regions.
+						</li>
+						<li>
+							Developed a Node.js backend service to handle API aggregations and
+							manage data pipelines from MongoDB and Kafka into Snowflake,
+							improving the efficiency of data streaming and storage.
+						</li>
+						<li>
+							Built a shared React component library that cut feature
+							development time and improved cross-team code consistency.
+						</li>
+						<li>
+							Integrated an in-app onboarding flow that improved user activation
+							rates and reduced support queries.
+						</li>
+						<li>
+							Leveraged AWS services to support backend infrastructure, and
+							integrated email and SMS notification services for operational
+							alerting.
+						</li>
+					</ul>
 				</div>
-				<div class="role-title">Python Developer Intern</div>
-				<ul>
-					<li>Developed a fully functional <strong>e-commerce clone</strong> application using <strong>Django and MongoDB</strong>, implementing product listings, cart management, order processing, and user authentication.</li>
-					<li>Contributed to REST API development and database schema design under senior engineer supervision.</li>
-				</ul>
-			</div>
 
-			<h2>KEY ENGINEERING PROJECTS</h2>
-			<div style="margin-bottom: 16px;">
-				<div class="project-role-title"><strong>Smart Expense Tracker</strong> | <span class="company-loc">React, Redux Toolkit, Node.js, MongoDB, Docker</span></div>
-				<p>Full-stack financial management platform built on decoupled microservices with a React/Redux frontend. Features JWT-based authentication, event-driven data consistency, and normalised Redux Toolkit caching for high-performance UI rendering.</p>
-			</div>
-
-			<h2>EDUCATION & RECOGNITION</h2>
-            <div class="education-item">
-				<div class="exp-header">
-					<div class="company-name">University of Calicut</div>
-					<div class="exp-date">2014 – 2018</div>
+				<div class="experience-block">
+					<div class="exp-header">
+						<div class="company-info">
+							Toobler Technologies <span class="company-loc">· Kochi</span>
+						</div>
+						<div class="exp-date">Feb 2019 – Feb 2023</div>
+					</div>
+					<div class="role-title">Senior Software Engineer</div>
+					<ul>
+						<li>
+							Architected a low-latency event platform with WebRTC + Socket.io
+							supporting 10,000+ concurrent users with real-time video and
+							messaging.
+						</li>
+						<li>
+							Built a drag-and-drop course creation engine in React for a global
+							education platform across 30+ countries.
+						</li>
+						<li>
+							Designed IoT analytics dashboards processing 5,000+ events/sec
+							using React and WebSocket-based data streaming.
+						</li>
+						<li>
+							Developed a React Native mobile app for an IoT monitoring
+							platform, achieving full feature parity on iOS and Android.
+						</li>
+					</ul>
 				</div>
-				<div style="margin-top: 4px; font-size: 10pt; color: #333;">B.Tech – Computer Science and Engineering</div>
-            </div>
 
-            <h2>ADDITIONAL</h2>
-            <div><strong>Languages:</strong> English, Malayalam, Hindi</div>
+				<div class="experience-block">
+					<div class="exp-header">
+						<div class="company-info">
+							IPSR Solutions Ltd <span class="company-loc">· Kochi</span>
+						</div>
+						<div class="exp-date">Aug 2018 – Jan 2019</div>
+					</div>
+					<div class="role-title">Python Developer Intern</div>
+					<ul>
+						<li>
+							Built a full-featured e-commerce application using Django and
+							MongoDB covering cart, orders, and authentication.
+						</li>
+					</ul>
+				</div>
+				<div class="section-divider"></div>
+
+				<!-- RECOGNITION -->
+				<h2>Recognition</h2>
+				<div class="recognition-block">
+					<div class="recognition-title">
+						<svg viewBox="0 0 24 24">
+							<path
+								d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.006 5.006 0 0011 15.9V19H7v2h10v-2h-4v-3.1a5.006 5.006 0 003.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"
+							/>
+						</svg>
+						GEM Award
+					</div>
+					<div style="font-size: 8.5pt">
+						Going the Extra Mile — awarded at Capgemini for architectural
+						ownership and delivery excellence.
+					</div>
+				</div>
+
+				<div class="section-divider"></div>
+				<div class="bottom-sections">
+					<div>
+						<!-- EDUCATION -->
+						<h2>Education</h2>
+						<div class="edu-inst">University of Calicut</div>
+						<div class="edu-degree">
+							B.Tech — Computer Science & Engineering
+						</div>
+						<div class="edu-date">2014 – 2018</div>
+					</div>
+
+					<div>
+						<!-- LANGUAGES -->
+						<h2>Languages</h2>
+						<div class="lang-item">English</div>
+						<div class="lang-item">Malayalam</div>
+						<div class="lang-item">Hindi</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
