@@ -4,7 +4,7 @@ const SEO = () => {
     const siteUrl = 'https://princepaulose.netlify.app';
     const title = 'Prince Paulose - Senior Software Engineer | React, Node.js, Java Expert';
     const description = 'Prince Paulose is a Senior Software Engineer from Kerala, India specializing in React, Node.js, TypeScript, Java, and AI integration. 7+ years of experience building scalable web applications at IBM and Capgemini. Available for freelance projects and full-time opportunities.';
-    const keywords = 'Prince Paulose, Prince Paulose Kerala, Prince Paulose Software Engineer, Prince Paulose IBM, Prince Paulose portfolio, React developer Kerala, Node.js developer India, Senior Software Engineer Kerala, Full Stack Developer India, TypeScript developer, Java Spring Boot developer, freelance React developer Kerala, software engineer Thrissur, web developer Kerala, AI integration specialist, frontend architect India';
+    const keywords = 'Prince Paulose, Prince Paulose Kerala, Prince Paulose Software Engineer, Prince Paulose IBM, Prince Paulose portfolio, React developer Kerala, Node.js developer India, Senior Software Engineer Kerala, Full Stack Developer India, TypeScript developer, Java Spring Boot developer, freelance React developer Kerala, software engineer Thrissur, web developer Kerala, AI integration specialist, Associate Architect';
 
     const structuredData = {
         '@context': 'https://schema.org',

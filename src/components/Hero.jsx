@@ -39,6 +39,21 @@ const Hero = () => {
             </div>
 
             <div className="container hero-content">
+                <AnimatedSection direction="down" delay={0.1}>
+                    <div className="hero-avatar-container">
+                        <div className="hero-avatar-glow"></div>
+                        <motion.img 
+                            src="/dp.jpg" 
+                            alt={basics.name} 
+                            className="hero-avatar"
+                            initial={{ scale: 0.5, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
+                            whileHover={{ scale: 1.05, rotate: 5 }}
+                        />
+                    </div>
+                </AnimatedSection>
+
                 <AnimatedSection direction="down" delay={0.2}>
                     <motion.h1
                         className="hero-title"
@@ -60,7 +75,7 @@ const Hero = () => {
                                 2000,
                                 'AI Integration Specialist',
                                 2000,
-                                'Frontend Architect',
+                                'Associate Architect',
                                 2000,
                             ]}
                             wrapper="h2"
